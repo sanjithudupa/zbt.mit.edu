@@ -2,444 +2,508 @@
   "most_recent_class": "beta upsilon",
   "brothers": [
     {
-      "id": 1,
+      "id": "adrian_yordanov",
       "name": "Adrian Yordanov",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Head of Food",
-      "role": "Head of Food"
+      "role": "Head of Food",
+      "rush_order": 1
     },
     {
-      "id": 2,
+      "id": "advay_goel",
       "name": "Advay Goel",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": "social chair"
+      "role": "social chair",
+      "rush_order": 3
     },
     {
-      "id": 3,
+      "id": "andrew_wen",
       "name": "Andrew Wen",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Math + CS student seeking to understand fundamental truths about the world",
-      "role": ""
+      "role": "",
+      "rush_order": 12
     },
     {
-      "id": 4,
+      "id": "benjamin_fan",
       "name": "Benjamin Fan",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": "risk chair"
+      "role": "risk chair",
+      "rush_order": 9
     },
     {
-      "id": 5,
+      "id": "brady_cruse",
       "name": "Brady Cruse",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": ""
+      "role": "",
+      "rush_order": 15
     },
     {
-      "id": 6,
+      "id": "canyon_neyman",
       "name": "Canyon Neyman",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": "midnight maker"
+      "role": "midnight maker",
+      "rush_order": 5
     },
     {
-      "id": 7,
+      "id": "dylan_yu",
       "name": "Dylan Yu",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": "risk chair"
+      "role": "risk chair",
+      "rush_order": 6
     },
     {
-      "id": 8,
+      "id": "eddie_qiao",
       "name": "Eddie Qiao",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Hi! I'm a junior from San Diego studying 6-3 and 18. In my free time, I enjoy watching sports, climbing, and trying new restaurants.",
-      "role": "rush chair"
+      "role": "rush chair",
+      "rush_order": 8
     },
     {
-      "id": 9,
+      "id": "eli_park",
       "name": "Eli Park",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Eli is involved in Asian Christian Fellowship and Men's Ultimate Frisbee. In his free time he enjoys playing golf, rooting for NC State, and playing the guitar.",
-      "role": ""
+      "role": "",
+      "rush_order": 7
     },
     {
-      "id": 10,
+      "id": "jack_breckling",
       "name": "Jack Breckling",
       "zbt_class": "beta tau",
       "graduating_class": 2026,
       "bio": "Just a guy who loves everything to do with the mountains from casual hiking to hanging off the side of a cliff from an ice axe.",
-      "role": ""
+      "role": "",
+      "rush_order": 10
     },
     {
-      "id": 11,
+      "id": "nai_abbeyquaye",
       "name": "Nai Abbeyquaye",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Hello, my name is Nai and I'm a Course 2 from Holden, MA. In my free time, I am a proud Chelsea Football Club Fan and a member of the MIT Motorsports team.",
-      "role": "van chair"
+      "role": "van chair",
+      "rush_order": 2
     },
     {
-      "id": 12,
+      "id": "pranav_bala",
       "name": "Pranav Bala",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": "BDD"
+      "role": "BDD",
+      "rush_order": 0
     },
     {
-      "id": 13,
+      "id": "shreyas_shrivastava",
       "name": "Shreyas Shrivastava",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": ""
+      "role": "",
+      "rush_order": 4
     },
     {
-      "id": 14,
+      "id": "stephen_lee",
       "name": "Stephen Lee",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "6-4 from CT and lifting enjoyer.",
-      "role": "social chair"
+      "role": "social chair",
+      "rush_order": 11
     },
     {
-      "id": 15,
+      "id": "yusuf_young",
       "name": "Yusuf Young",
       "zbt_class": "beta tau",
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
-      "role": ""
+      "role": "",
+      "rush_order": 13
     },
     {
-      "id": 16,
+      "id": "nakul_shenoy",
       "name": "Nakul Shenoy",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 0
     },
     {
-      "id": 17,
+      "id": "chris_wong",
       "name": "Chris Wong",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 1
     },
     {
-      "id": 18,
+      "id": "naail_lakhani",
       "name": "Naail Lakhani",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 2
     },
     {
-      "id": 19,
+      "id": "justin_shan",
       "name": "Justin Shan",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 3
     },
     {
-      "id": 20,
+      "id": "saketh_gabbita",
       "name": "Saketh Gabbita",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 6
     },
     {
-      "id": 21,
+      "id": "brandon_lei",
       "name": "Brandon Lei",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 5
     },
     {
-      "id": 22,
+      "id": "evan_ren",
       "name": "Evan Ren",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 4
     },
     {
-      "id": 23,
+      "id": "alvin_chen",
       "name": "Alvin Chen",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 7
     },
     {
-      "id": 24,
+      "id": "ben_kang",
       "name": "Ben Kang",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 8
     },
     {
-      "id": 25,
+      "id": "ben_wu",
       "name": "Ben Wu",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 9
     },
     {
-      "id": 26,
+      "id": "vittal_thirumalai",
       "name": "Vittal Thirumalai",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 10
     },
     {
-      "id": 27,
+      "id": "vishaal_ram",
       "name": "Vishaal Ram",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 11
     },
     {
-      "id": 28,
+      "id": "eric_liu",
       "name": "Eric Liu",
       "zbt_class": "beta rho",
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
-      "role": ""
+      "role": "",
+      "rush_order": 12
     },
     {
-      "id": 29,
+      "id": "andrew_diaz",
       "name": "Andrew Diaz",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 1
     },
     {
-      "id": 30,
+      "id": "christian_fletcher",
       "name": "Christian Fletcher",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 11
     },
     {
-      "id": 31,
+      "id": "daniel_guan",
       "name": "Daniel Guan",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 3
     },
     {
-      "id": 32,
+      "id": "nick_ouyang",
+      "name": "Nick Ouyang",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Sigma class, Class of 2025.",
+      "role": "",
+      "rush_order": -1
+    },
+    {
+      "id": "daniel_xu",
       "name": "Daniel Xu",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 0
     },
     {
-      "id": 33,
+      "id": "deepu_pradeep",
       "name": "Deepu Pradeep",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": "treasurer"
+      "role": "treasurer",
+      "rush_order": 2
     },
     {
-      "id": 34,
+      "id": "frank_liu",
       "name": "Frank Liu",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": "house chair"
+      "role": "house chair",
+      "rush_order": 8
     },
     {
-      "id": 35,
+      "id": "greycen_ren",
       "name": "Greycen Ren",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": "president"
+      "role": "president",
+      "rush_order": 9
     },
     {
-      "id": 36,
+      "id": "jeremy_yu",
       "name": "Jeremy Yu",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": "vice president"
+      "role": "vice president",
+      "rush_order": 4
     },
     {
-      "id": 37,
+      "id": "raymond_pan",
       "name": "Raymond Pan",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 8
     },
     {
-      "id": 38,
+      "id": "richard_chen",
       "name": "Richard Chen",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 6
     },
     {
-      "id": 39,
+      "id": "sunwoo_lee",
       "name": "Sunwoo Lee",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 10
     },
     {
-      "id": 40,
+      "id": "veer_gadodia",
       "name": "Veer Gadodia",
       "zbt_class": "beta sigma",
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
-      "role": ""
+      "role": "",
+      "rush_order": 5
     },
     {
-      "id": 41,
+      "id": "kyran_siddiqui",
       "name": "Kyran Siddiqui",
       "zbt_class": "beta upsilon",
       "graduating_class": 2027,
       "bio": "Member of Beta Upsilon class, Class of 2027.",
-      "role": "social chair"
+      "role": "social chair",
+      "rush_order": 10
     },
     {
-      "id": 42,
+      "id": "sanjith_udupa",
       "name": "Sanjith Udupa",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Hi I'm Sanjith from Novi, Michigan. I'm interested in robotics, I run HackMIT, I'm perpetually conflicted between 6-3 and 6-5 (6-2 to oldheads), and I enjoy solving flow free puzzles",
-      "role": "tech chair"
+      "role": "webmaster",
+      "rush_order": 3
     },
     {
-      "id": 43,
+      "id": "colton_kim",
       "name": "Colton Kim",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": "risk chair"
+      "role": "risk chair",
+      "rush_order": 0
     },
     {
-      "id": 44,
+      "id": "timothy_mathew",
       "name": "Timothy Mathew",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Hi! I'm Timmy, a '28 from Michigan majoring in 6-3 and 18. I'm a huge fan of hot chocolate, waterparks, and Nintendo music. You can find me stargazing, grinding Mario Kart Wii, or messing around on a piano!",
-      "role": ""
+      "role": "",
+      "rush_order": 5
     },
     {
-      "id": 45,
+      "id": "joshua_liu",
       "name": "Joshua Liu",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "hi i like eating and i rly like chicago chinatown",
-      "role": ""
+      "role": "",
+      "rush_order": 8
     },
     {
-      "id": 46,
+      "id": "aaron_hu",
       "name": "Aaron Hu",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 1
     },
     {
-      "id": 47,
+      "id": "joshua_jang",
       "name": "Joshua Jang",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 6
     },
     {
-      "id": 48,
+      "id": "humaid_alhuthali",
       "name": "Humaid Alhuthali",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 2
     },
     {
-      "id": 49,
+      "id": "vishal_nandakumar",
       "name": "Vishal Nandakumar",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 9
     },
     {
-      "id": 50,
+      "id": "michael_wang",
       "name": "Michael Wang",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 4
     },
     {
-      "id": 51,
+      "id": "pavan_jayaraman",
       "name": "Pavan Jayaraman",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
-      "bio": "hey I’m Pavan, I study physics and like to gym and be on my phone",
-      "role": ""
+      "bio": "hey I'm Pavan, I study physics and like to gym and be on my phone",
+      "role": "",
+      "rush_order": 12
     },
     {
-      "id": 52,
+      "id": "jiarui_peng",
       "name": "Jiarui Peng",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 13
     },
     {
-      "id": 53,
+      "id": "mateja_vukelic",
       "name": "Mateja Vukelic",
       "zbt_class": "beta upsilon",
       "graduating_class": 2027,
       "bio": "Member of Beta Upsilon class, Class of 2027.",
-      "role": ""
+      "role": "",
+      "rush_order": 14
     },
     {
-      "id": 54,
+      "id": "shaurya_agrawal",
       "name": "Shaurya Agrawal",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": ""
+      "role": "",
+      "rush_order": 11
     },
     {
-      "id": 55,
+      "id": "yinuo_song",
       "name": "Yinuo Song",
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Hi",
-      "role": ""
+      "role": "",
+      "rush_order": 8
     }
   ],
   "campusActivities": [

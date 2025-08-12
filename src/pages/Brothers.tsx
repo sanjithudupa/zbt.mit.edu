@@ -4,12 +4,13 @@ import brothersData from '../data/brothersData.json'
 import execContacts from '../data/execContacts.json'
 
 interface Brother {
-  id: number
+  id: string
   name: string
   zbt_class: string
   graduating_class: number
   bio: string
   role: string
+  rush_order: number
 }
 
 interface BrotherWithImage extends Brother {
@@ -85,7 +86,7 @@ const Brothers = () => {
   }, [brothers])
 
   // Handle image load events
-  const handleImageLoad = (brotherId: number) => {
+  const handleImageLoad = (brotherId: string) => {
     setBrothersWithImages(prev => 
       prev.map(brother => 
         brother.id === brotherId 
@@ -95,7 +96,7 @@ const Brothers = () => {
     )
   }
 
-  const handleImageError = (brotherId: number) => {
+  const handleImageError = (brotherId: string) => {
     setBrothersWithImages(prev => 
       prev.map(brother => 
         brother.id === brotherId 
@@ -134,7 +135,7 @@ const Brothers = () => {
   // Get only the most recent class plus the next 3 classes, then reverse the order
   const displayZbtClasses = allZbtClasses.slice(mostRecentIndex, mostRecentIndex + 4).reverse()
   
-  // Filter brothers to only include those from the display classes and sort alphabetically within each class
+  // Filter brothers to only include those from the display classes and sort by rush order within each class
   const displayBrothers = brothersWithImages
     .filter(brother => displayZbtClasses.includes(brother.zbt_class))
     .sort((a, b) => {
@@ -144,8 +145,8 @@ const Brothers = () => {
       if (aClassIndex !== bClassIndex) {
         return aClassIndex - bClassIndex
       }
-      // Then sort alphabetically by name within each class
-      return a.name.localeCompare(b.name)
+      // Then sort by rush order within each class
+      return a.rush_order - b.rush_order
     })
 
   const filteredBrothers = displayBrothers.filter(brother => brother.zbt_class === selectedZbtClass)
