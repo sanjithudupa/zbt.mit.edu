@@ -57,6 +57,24 @@ Just add to the file, for maintenence you can delete old brothers if you want, b
 4. Clean up any old images if you want to delete them
 
 ### Editing images
-Pretty self explanatory, the images are all in `public/images/<page>` and most are just numbered for the gallery, so just replace the filename exactly and your image will be updated. 
+Pretty self explanatory, the images are all in `public/images/<page>` and most are just numbered for the gallery, so just replace the filename exactly and your image will be updated. Ensure the file name and extension remains **exactly** the same as it was before.
 
-### Editing 
+### Updating Geneology Data
+
+1. download the google sheet to xlsx and put it in scripts directory
+
+2. `cd scripts && python -m venv && source venv/bin/activate && pip install -r requirements.txt`
+
+3. `python build_geneology.py`
+
+### Deploying
+
+You will need to be given web permissions by ZBT President through the MIT email system or else you won't be able to access the ZBT folder.
+
+Then, first delete the old files:
+
+run the following commands sequentially in your shell
+`KERB='<your kerb>'`
+`yarn run build`
+`scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"` (this one might take a couple tries bc athena is flaky)
+`ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh`

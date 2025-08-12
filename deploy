@@ -1,32 +1,19 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-# Usage: ./deploy_zbt.sh <kerberos-username>
-# Example: ./deploy_zbt.sh sanjithu
+#!/bin/bash
 
 KERB="${1:-}"
-HOST="athena.dialup.mit.edu"
-REMOTE_PATH="/mit/zbt/web_scripts"
 
 if [[ -z "$KERB" ]]; then
-  echo "Usage: $0 <kerberos-username>"
+  echo "Usage: $0 <kerberos>"
   exit 1
 fi
 
-echo "Building Vite app..."
+echo "### Building Vite app... ###"
 yarn run build
 
-echo "Copying ./dist to ${KERB}@${HOST}:${REMOTE_PATH}"
-rsync -avz --delete -e ssh ./dist/ "${KERB}@${HOST}:${REMOTE_PATH}/"
+echo "### Copying ./dist to ${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/ ###"
+scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"
 
-echo "Updating public read permissions on remote..."
-ssh "${KERB}@${HOST}" bash -lc "set -e
-  fs setacl /mit/zbt                 system:anyuser read || true
-  fs setacl '${REMOTE_PATH}'         system:anyuser read || true
-  find '${REMOTE_PATH}' -type d -exec fs setacl -dir {} -acl system:anyuser read \; || true
-"
+echo "### Backing up old files and setting permissions for new files... ###"
+ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
 
-echo "Verifying deployment..."
-curl -I --max-time 5 https://zbt.mit.edu/ || true
-
-echo "Deploy complete. Hard-refresh browser to see changes."
+echo "### Deploy complete. Hard-refresh your browser to see changes. ###"
