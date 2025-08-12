@@ -1,140 +1,58 @@
-# Zeta Beta Tau Xi Chapter - MIT Website
+# ZBwebsiTe
 
-A modern, responsive website for the Zeta Beta Tau Xi Chapter at MIT, built with React, TypeScript, and Tailwind CSS.
+React-based website for Zeta Beta Tau fraternity Xi Chapter at the Massachusetts Institute of Technology.
+This website is designed to be super modular, with little to no code changes ever needed each year.
 
-## Features
+Just edit the data files and add new images and it's all good.
 
-- **Modern Design**: Clean, professional interface with responsive design
-- **React Router**: Seamless navigation between pages
-- **TypeScript**: Type-safe development
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **Responsive**: Mobile-first design that works on all devices
-- **Component-Based**: Modular architecture for easy maintenance
+##  HOW TO UPDATE THE SITE:
 
-## Pages
-
-- **Home**: Overview of the fraternity with key statistics and features
-- **Rush**: Information about rush events and schedule
-- **Events**: Upcoming and past events with filtering
-- **Brothers**: Current brother profiles and leadership
-- **House**: House information, amenities, and virtual tour
-- **History**: Timeline of chapter history and notable alumni
-- **Alumni**: Alumni directory and networking opportunities
-
-## Technology Stack
-
-- **Frontend**: React 19, TypeScript
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **Package Manager**: Yarn
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- Yarn package manager
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd zbwebsite
+### New Rush Info
+Update `src/data/rushData.json` in the following format:
+```json
+{
+	"start_date": "mm/dd/yyyy",
+	"end_date": "mm/dd/yyyy",
+	"events": [
+		{
+			"name": str,
+			"date": "mm/dd",
+			"time": "hh:mm AM/PM - hh:mm AM/PM",
+			"description": str,
+			"location": str,
+			"tags": ["food", "games", "excursion", "invite_only"]
+		}
+	]
+}
 ```
 
-2. Install dependencies:
-```bash
-yarn install
+You can save the old rush info if you want. Also the tags are variable, it'll capitalize and split on underscores.
+
+### Adding new brothers
+1. Update `src/data/brothersData.json`
+Just add to the file, for maintenence you can delete old brothers if you want, but use this format for new ones:
+```json
+{
+    "id": "first_last", # if there's overlap handle it with a number or smth
+    "name": "First Last",
+    "zbt_class": "beta xxx",
+    "graduating_class": 20xx,
+    "bio": "",
+    "role": "",
+    "rush_order": 1,
+    "big": "", # of ids
+    "littles": [""]
+}
 ```
 
-3. Start the development server:
-```bash
-yarn dev
-```
+2. Update the `most_recent_class` field to be the newest class
 
-4. Open your browser and navigate to `http://localhost:5173`
+3. Add brother images to `public/images/brothers/beta_xxx` in the following format:
+`First Last.jpeg` -> **it is critical that the file extension is `.jpeg` spelled that way,** you can rename any image (even png) to that without conversion because all file readers will read the data given header specification anyways, but this is needed for the loading of the image to work. 
 
-### Available Scripts
+4. Clean up any old images if you want to delete them
 
-- `yarn dev` - Start development server
-- `yarn build` - Build for production
-- `yarn preview` - Preview production build
-- `yarn lint` - Run ESLint
+### Editing images
+Pretty self explanatory, the images are all in `public/images/<page>` and most are just numbered for the gallery, so just replace the filename exactly and your image will be updated. 
 
-## Project Structure
-
-```
-src/
-├── components/          # Reusable components
-│   ├── Navbar.tsx      # Navigation component
-│   └── Footer.tsx      # Footer component
-├── pages/              # Page components
-│   ├── Home.tsx        # Homepage
-│   ├── Rush.tsx        # Rush page
-│   ├── Events.tsx      # Events page
-│   ├── Brothers.tsx    # Brothers page
-│   ├── House.tsx       # House page
-│   ├── History.tsx     # History page
-│   └── Alumni.tsx      # Alumni page
-├── assets/             # Static assets
-├── App.tsx             # Main app component
-├── main.tsx            # App entry point
-└── index.css           # Global styles and Tailwind imports
-```
-
-## Design System
-
-### Colors
-- Primary: Blue (#2563eb)
-- Secondary: Gray scale
-- Accent: Various colors for different sections
-
-### Typography
-- Font Family: System UI stack
-- Responsive text sizing with Tailwind classes
-
-### Components
-- Consistent card layouts
-- Responsive grid systems
-- Interactive hover states
-- Modern button styles
-
-## Content
-
-The website includes placeholder content that can be easily replaced with real data:
-
-- Brother profiles and photos
-- Event information and images
-- House photos and virtual tour
-- Alumni directory
-- Historical timeline
-
-## Deployment
-
-The project can be deployed to any static hosting service:
-
-1. Build the project:
-```bash
-yarn build
-```
-
-2. Deploy the `dist` folder to your hosting service
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is for the Zeta Beta Tau Xi Chapter at MIT.
-
-## Contact
-
-For questions about the website, contact the tech chair at tech@zbt.mit.edu
+### Editing 
