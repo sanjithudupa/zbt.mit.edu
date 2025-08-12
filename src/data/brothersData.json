@@ -640,7 +640,14 @@
     {
       "name": "Asian Christian Fellowship",
       "description": "Inclusive Christian community for Asian students at MIT",
+      "link": "https://acf.mit.edu/",
       "icon": "Heart"
+    },
+    {
+      "name": "MIT Motorsports",
+      "description": "MIT's motorsports team, building a Formula SAE car from scratch",
+      "link": "https://fsae.mit.edu/",
+      "icon": "Car"
     }
   ]
 } 

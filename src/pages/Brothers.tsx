@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Users, Award, GraduationCap, MapPin, X, Code, Heart, TrendingUp, Diamond } from 'lucide-react'
+import { Users, Award, GraduationCap, MapPin, X, Code, Heart, TrendingUp, Diamond, Car } from 'lucide-react'
 import brothersData from '../data/brothersData.json'
 import execContacts from '../data/execContacts.json'
 
@@ -219,10 +219,11 @@ const Brothers = () => {
 
   const campusActivities = brothersData.campusActivities.map(activity => ({
     ...activity,
-    icon: activity.icon === 'Code' ? <Code size={24} className="text-blue-600" /> : 
-         activity.icon === 'Diamond' ? <Diamond size={24} className="text-green-600" /> :
-         activity.icon === 'Heart' ? <Heart size={24} className="text-red-600" /> :
-         <TrendingUp size={24} className="text-purple-600" />
+    icon: activity.icon === 'Code' ? <Code size={20} className="text-blue-600" /> : 
+         activity.icon === 'Diamond' ? <Diamond size={20} className="text-green-600" /> :
+         activity.icon === 'Heart' ? <Heart size={20} className="text-red-600" /> :
+         activity.icon === 'Car' ? <Car size={20} className="text-orange-600" /> :
+         <TrendingUp size={20} className="text-purple-600" />
   }))
 
   // Helper function to format ZBT class name
@@ -276,17 +277,17 @@ const Brothers = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {campusActivities.map((activity, index) => (
               <a
                 key={index}
                 href={activity.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow group"
+                className="bg-white p-5 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow group"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto">
+                  <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mx-auto">
                     {activity.icon}
                   </div>
                   {/* <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-600 transition-colors" /> */}
