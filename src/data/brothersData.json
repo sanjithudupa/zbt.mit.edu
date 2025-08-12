@@ -1,0 +1,471 @@
+{
+  "most_recent_class": "beta upsilon",
+  "brothers": [
+    {
+      "id": 1,
+      "name": "Adrian Yordanov",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 2,
+      "name": "Advay Goel",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "social chair"
+    },
+    {
+      "id": 3,
+      "name": "Andrew Wen",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 4,
+      "name": "Benjamin Fan",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "risk chair"
+    },
+    {
+      "id": 5,
+      "name": "Brady Cruse",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 6,
+      "name": "Canyon Neyman",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "midnight maker"
+    },
+    {
+      "id": 7,
+      "name": "Dylan Yu",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "risk chair"
+    },
+    {
+      "id": 8,
+      "name": "Eddie Qiao",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "rush chair"
+    },
+    {
+      "id": 9,
+      "name": "Eli Park",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 10,
+      "name": "Jack Breckling",
+      "zbt_class": "beta tau",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Tau class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 11,
+      "name": "Nai Abbeyquaye",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "van chair"
+    },
+    {
+      "id": 12,
+      "name": "Pranav Bala",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "BDD"
+    },
+    {
+      "id": 13,
+      "name": "Shreyas Shrivastava",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 14,
+      "name": "Stephen Lee",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "social chair"
+    },
+    {
+      "id": 15,
+      "name": "Yusuf Young",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 16,
+      "name": "Nakul Shenoy",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 17,
+      "name": "Chris Wong",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 18,
+      "name": "Naail Lakhani",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 19,
+      "name": "Justin Shan",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 20,
+      "name": "Saketh Gabbita",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 21,
+      "name": "Brandon Lei",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 22,
+      "name": "Evan Ren",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 23,
+      "name": "Alvin Chen",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 24,
+      "name": "Ben Kang",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 25,
+      "name": "Ben Wu",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 26,
+      "name": "Vittal Thirumalai",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 27,
+      "name": "Vishaal Ram",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 28,
+      "name": "Eric Liu",
+      "zbt_class": "beta rho",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Rho class, Class of 2025.",
+      "role": ""
+    },
+    {
+      "id": 29,
+      "name": "Andrew Diaz",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 30,
+      "name": "Christian Fletcher",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 31,
+      "name": "Daniel Guan",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 32,
+      "name": "Daniel Xu",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 33,
+      "name": "Deepu Pradeep",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": "treasurer"
+    },
+    {
+      "id": 34,
+      "name": "Frank Liu",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": "house chair"
+    },
+    {
+      "id": 35,
+      "name": "Greycen Ren",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": "president"
+    },
+    {
+      "id": 36,
+      "name": "Jeremy Yu",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": "vice president"
+    },
+    {
+      "id": 37,
+      "name": "Raymond Pan",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 38,
+      "name": "Richard Chen",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 39,
+      "name": "Sunwoo Lee",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 40,
+      "name": "Veer Gadodia",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2026,
+      "bio": "Member of Beta Sigma class, Class of 2026.",
+      "role": ""
+    },
+    {
+      "id": 41,
+      "name": "Kyran Siddiqui",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Upsilon class, Class of 2027.",
+      "role": "social chair"
+    },
+    {
+      "id": 42,
+      "name": "Sanjith Udupa",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": "tech chair"
+    },
+    {
+      "id": 43,
+      "name": "Colton Kim",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": "risk chair"
+    },
+    {
+      "id": 44,
+      "name": "Timothy Mathew",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 45,
+      "name": "Joshua Liu",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 46,
+      "name": "Aaron Hu",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 47,
+      "name": "Joshua Jang",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 48,
+      "name": "Humaid Alhuthali",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 49,
+      "name": "Vishal Nandakumar",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 50,
+      "name": "Michael Wang",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 51,
+      "name": "Pavan Jayaraman",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 52,
+      "name": "Jiarui Peng",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 53,
+      "name": "Mateja Vukelic",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Upsilon class, Class of 2027.",
+      "role": ""
+    },
+    {
+      "id": 54,
+      "name": "Shaurya Agrawal",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    },
+    {
+      "id": 55,
+      "name": "Yinuo Song",
+      "zbt_class": "beta upsilon",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Upsilon class, Class of 2028.",
+      "role": ""
+    }
+  ],
+  "campusActivities": [
+    {
+      "name": "HackMIT",
+      "description": "MIT's premier hackathon where students build innovative projects in 24 hours",
+      "link": "https://hackmit.org/",
+      "icon": "Code"
+    },
+    {
+      "name": "MIT Poker Club",
+      "description": "Hosts weekly poker sessions and tournaments with large prize pools",
+      "link": "https://poker.mit.edu/",
+      "icon": "Diamond"
+    },
+    {
+      "name": "Traders@MIT",
+      "description": "Runs a collegiate trading competition bringing together students from all over the world",
+      "link": "https://traders.mit.edu/",
+      "icon": "TrendingUp"
+    },
+    {
+      "name": "Asian Christian Fellowship",
+      "description": "Inclusive Christian community for Asian students at MIT",
+      "link": "https://acf.mit.edu/",
+      "icon": "Heart"
+    }
+  ]
+} 

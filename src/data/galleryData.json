@@ -1,0 +1,106 @@
+{
+  "home": {
+    "lifeAtZBT": {
+      "title": "Life at ZBT",
+      "description": "A glimpse into daily life and brotherhood at ZBT",
+      "images": [
+        { "id": 1, "src": "/images/home/3.jpeg", "alt": "Life at ZBT - Photo 3" },
+        { "id": 2, "src": "/images/home/7.jpeg", "alt": "Life at ZBT - Photo 7" },
+        { "id": 3, "src": "/images/home/1.jpeg", "alt": "Life at ZBT - Photo 1" },
+        { "id": 4, "src": "/images/home/8.jpg", "alt": "Life at ZBT - Photo 8" },
+        { "id": 5, "src": "/images/home/5.jpeg", "alt": "Life at ZBT - Photo 5" },
+        { "id": 6, "src": "/images/home/2.jpeg", "alt": "Life at ZBT - Photo 2" },
+        { "id": 7, "src": "/images/home/4.jpeg", "alt": "Life at ZBT - Photo 4" },
+        { "id": 8, "src": "/images/home/6.jpeg", "alt": "Life at ZBT - Photo 6" }
+      ]
+    }
+  },
+  "brothers": {
+    "brotherhoodMoments": {
+      "title": "Brotherhood Moments",
+      "description": "Capturing the bonds and memories that make ZBT special",
+      "images": [
+        { "id": 1, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 1", "placeholderIcon": "📸" },
+        { "id": 2, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 2", "placeholderIcon": "📸" },
+        { "id": 3, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 3", "placeholderIcon": "📸" },
+        { "id": 4, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 4", "placeholderIcon": "📸" },
+        { "id": 5, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 5", "placeholderIcon": "📸" },
+        { "id": 6, "src": "", "alt": "Brotherhood Moments", "placeholder": "Brotherhood Photo 6", "placeholderIcon": "📸" }
+      ]
+    }
+  },
+  "events": {
+    "eventHighlights": {
+      "title": "Event Highlights",
+      "description": "A glimpse into our vibrant social life and brotherhood events",
+      "images": [
+        { "id": 1, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 1", "placeholderIcon": "📸" },
+        { "id": 2, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 2", "placeholderIcon": "📸" },
+        { "id": 3, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 3", "placeholderIcon": "📸" },
+        { "id": 4, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 4", "placeholderIcon": "📸" },
+        { "id": 5, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 5", "placeholderIcon": "📸" },
+        { "id": 6, "src": "", "alt": "Event Highlights", "placeholder": "Event Photo 6", "placeholderIcon": "📸" }
+      ]
+    }
+  },
+  "house": {
+    "houseTour": {
+      "title": "House Tour",
+      "description": "Explore our beautiful house and see what makes it special",
+      "images": [
+        { "id": 1, "src": "", "alt": "Common Room", "placeholder": "Common Room", "placeholderIcon": "🛋️" },
+        { "id": 2, "src": "", "alt": "Dining Area", "placeholder": "Dining Area", "placeholderIcon": "🍽️" },
+        { "id": 3, "src": "", "alt": "Study Room", "placeholder": "Study Room", "placeholderIcon": "📚" },
+        { "id": 4, "src": "", "alt": "Bedroom", "placeholder": "Bedroom", "placeholderIcon": "🛏️" },
+        { "id": 5, "src": "", "alt": "House Exterior", "placeholder": "Exterior", "placeholderIcon": "🏠" },
+        { "id": 6, "src": "", "alt": "Backyard", "placeholder": "Backyard", "placeholderIcon": "🌳" }
+      ]
+    }
+  },
+  "history": {
+    "historicalGallery": {
+      "title": "Historical Gallery",
+      "description": "Browse through our collection of historical photos and memories",
+      "images": [
+        { "id": 1, "src": "", "alt": "Founding Members", "placeholder": "Founding Members", "placeholderIcon": "👥" },
+        { "id": 2, "src": "", "alt": "Original House", "placeholder": "Original House", "placeholderIcon": "🏛️" },
+        { "id": 3, "src": "", "alt": "Brookline House", "placeholder": "Brookline House", "placeholderIcon": "🏠" },
+        { "id": 4, "src": "", "alt": "Historical Events", "placeholder": "Historical Events", "placeholderIcon": "🎉" },
+        { "id": 5, "src": "", "alt": "Past Brothers", "placeholder": "Past Brothers", "placeholderIcon": "👨‍🎓" },
+        { "id": 6, "src": "", "alt": "Traditions", "placeholder": "Traditions", "placeholderIcon": "🎭" }
+      ]
+    }
+  },
+  "rush": {
+    "rushActivities": {
+      "title": "Rush Activities",
+      "description": "Explore the variety of activities and events during rush week",
+      "images": [
+        { "id": 1, "src": "", "alt": "Canes and Outdoor Games", "placeholder": "Canes and Outdoor Games", "placeholderIcon": "🍗" },
+        { "id": 2, "src": "", "alt": "Sushi and Poker", "placeholder": "Sushi and Poker", "placeholderIcon": "🍣" },
+        { "id": 3, "src": "", "alt": "Paintball", "placeholder": "Paintball", "placeholderIcon": "🎯" },
+        { "id": 4, "src": "", "alt": "Thai Food and House Tours", "placeholder": "Thai Food and House Tours", "placeholderIcon": "🍜" },
+        { "id": 5, "src": "", "alt": "Minigolf", "placeholder": "Minigolf", "placeholderIcon": "⛳" },
+        { "id": 6, "src": "", "alt": "Go Karting", "placeholder": "Go Karting", "placeholderIcon": "🏎️" },
+        { "id": 7, "src": "", "alt": "Bowling and Arcade", "placeholder": "Bowling and Arcade", "placeholderIcon": "🎳" },
+        { "id": 8, "src": "", "alt": "Battle Canoes", "placeholder": "Battle Canoes", "placeholderIcon": "🛶" },
+        { "id": 9, "src": "", "alt": "Rock Climbing", "placeholder": "Rock Climbing", "placeholderIcon": "🧗" },
+        { "id": 10, "src": "", "alt": "Sunset Boat Cruise", "placeholder": "Sunset Boat Cruise", "placeholderIcon": "🚢" }
+      ]
+    }
+  },
+  "alumni": {
+    "alumniGallery": {
+      "title": "Alumni Gallery",
+      "description": "Browse through our collection of alumni photos and memories",
+      "images": [
+        { "id": 1, "src": "", "alt": "Alumni Events", "placeholder": "Alumni Events", "placeholderIcon": "🎉" },
+        { "id": 2, "src": "", "alt": "Graduation", "placeholder": "Graduation", "placeholderIcon": "🎓" },
+        { "id": 3, "src": "", "alt": "Reunions", "placeholder": "Reunions", "placeholderIcon": "🤝" },
+        { "id": 4, "src": "", "alt": "Mentoring", "placeholder": "Mentoring", "placeholderIcon": "👨‍🏫" },
+        { "id": 5, "src": "", "alt": "Networking", "placeholder": "Networking", "placeholderIcon": "🌐" },
+        { "id": 6, "src": "", "alt": "Legacy", "placeholder": "Legacy", "placeholderIcon": "⭐" }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,27 @@
+{
+  "president": {
+    "name": "Alex Johnson",
+    "email": "president@zbt.mit.edu",
+    "phone": "(617) 555-0120"
+  },
+  "rushChair": {
+    "name": "Alex Johnson",
+    "email": "rush@zbt.mit.edu",
+    "phone": "(617) 555-0123"
+  },
+  "socialChair": {
+    "name": "Sarah Williams",
+    "email": "social@zbt.mit.edu",
+    "phone": "(617) 555-0125"
+  },
+  "alumniChair": {
+    "name": "Michael Chen",
+    "email": "alumni@zbt.mit.edu",
+    "phone": "(617) 555-0126"
+  },
+  "eventsChair": {
+    "name": "Emily Rodriguez",
+    "email": "events@zbt.mit.edu",
+    "phone": "(617) 555-0124"
+  }
+} 
