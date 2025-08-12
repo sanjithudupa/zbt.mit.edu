@@ -58,7 +58,7 @@ const Alumni = () => {
                     An archive of the brotherhood composites dating back to 1960s.
                   </p>
                   <a
-                    href="https://zbt.mit.edu/archives/"
+                    href="/archives"
                     className="text-blue-600 hover:text-blue-800 font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const Alumni = () => {
                     An interactive map of all big-little lines recorded since the Alpha Gamma class.
                   </p>
                   <a
-                    href="https://zbt.mit.edu/gen"
+                    href="/gen"
                     className="text-blue-600 hover:text-blue-800 font-medium"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -5,6 +5,10 @@ This website is designed to be super modular, with little to no code changes eve
 
 Just edit the data files and add new images and it's all good.
 
+Prereqs:
+- node (I am on `v.23.11.0` but there is a lot of flexibility here)
+- yarn (I am on `1.22.22` but there is also flexiblity here)
+
 ##  HOW TO UPDATE THE SITE:
 
 ### New Rush Info

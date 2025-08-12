@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'  
+import { Mail, MapPin, Instagram } from 'lucide-react'  
 import logo from '../assets/images/zbt_crest.png'
 
 const Footer = () => {
@@ -17,6 +17,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-blue-400" />
                 <span>zbt-president@mit.edu</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Instagram size={20} className="text-blue-400" />
+                <a href="https://www.instagram.com/mit_zbt/" className="text-gray-300 hover:text-white transition-colors">@mit_zbt</a>
               </div>
             </div>
           </div>

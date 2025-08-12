@@ -9,6 +9,8 @@ import Brothers from './pages/Brothers'
 import House from './pages/House'
 import History from './pages/History'
 import Alumni from './pages/Alumni'
+import { Genealogy } from './pages/gen/Gen'
+import Archives from './pages/archives/Archives'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path="/house" element={<House />} />
             <Route path="/history" element={<History />} />
             <Route path="/alumni" element={<Alumni />} />
+            <Route path="/gen" element={<Genealogy />} />
+            <Route path="/archives" element={<Archives />} />
           </Routes>
         </main>
         <Footer />
