@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Mail, Linkedin, MapPin, GraduationCap, Building, Users, Calendar, Heart, Archive, Map } from 'lucide-react'
+import { Mail, Users, GraduationCap, Heart } from 'lucide-react'
 import execContacts from '../data/execContacts.json'
 import ClickableImage from '../components/ClickableImage'
 import GallerySet from '../components/GallerySet'

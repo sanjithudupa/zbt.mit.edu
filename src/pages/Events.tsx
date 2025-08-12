@@ -179,8 +179,8 @@ const Events = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Come Be Part of Our Next Event!</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Whether you're a current student or just want to experience the ZBT community, or another organization looking to hold a joint event,
-            we welcome you to our events throughout the year.
+            Whether you're a current student wanting to experience the ZBT community, or another organization looking to hold a joint event,
+            we welcome you to ZBT.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

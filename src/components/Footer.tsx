@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react'  
+import { Mail, MapPin } from 'lucide-react'  
 import logo from '../assets/images/zbt_crest.png'
 
 const Footer = () => {
