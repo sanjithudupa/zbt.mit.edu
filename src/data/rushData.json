@@ -1,118 +1,126 @@
 {
-  "start_date": "08/31/2024",
-  "end_date": "09/05/2024",
-  "events": [
-    {
-      "name": "Canes and Outdoor Games",
-      "date": "08/31",
-      "time": "1:00 PM - 4:00 PM",
-      "description": "Come to Briggs Field for Cane's chicken and have a ball playing spikeball, soccer, ultimate, football, and more! Vegetarian options available.",
-      "location": "Briggs Field",
-      "tags": ["food", "games"]
-    },
-    {
-      "name": "Sushi and Poker",
-      "date": "08/31",
-      "time": "5:00 PM - 8:00 PM",
-      "description": "Enjoy delicious sushi while learning poker from our brothers. Perfect for beginners and experienced players alike.",
-      "location": "ZBT House",
-      "tags": ["food", "games"]
-    },
-    {
-      "name": "Paintball",
-      "date": "09/01",
-      "time": "10:15 AM - 4:00 PM",
-      "description": "Join us for an exciting day of paintball! Equipment provided. No experience necessary.",
-      "location": "Paintball Arena",
-      "tags": ["excursion", "games"]
-    },
-    {
-      "name": "Thai Food and House Tours",
-      "date": "09/01",
-      "time": "5:00 PM - 7:30 PM",
-      "description": "Enjoy authentic Thai cuisine while exploring our beautiful Brookline home. Learn about our brotherhood and living spaces.",
-      "location": "ZBT House",
-      "tags": ["food", "house"]
-    },
-    {
-      "name": "Minigolf",
-      "date": "09/01",
-      "time": "7:30 PM - 10:00 PM",
-      "description": "Fun evening of minigolf with brothers. Prizes for winners!",
-      "location": "Local Minigolf Course",
-      "tags": ["excursion", "games"]
-    },
-    {
-      "name": "Go Karting",
-      "date": "09/02",
-      "time": "1:00 PM - 5:00 PM",
-      "description": "High-speed fun with go karting! Race against brothers and see who's the fastest.",
-      "location": "Go Kart Track",
-      "tags": ["excursion", "games"]
-    },
-    {
-      "name": "Bowling and Arcade",
-      "date": "09/02",
-      "time": "5:15 PM - 8:45 PM",
-      "description": "Classic bowling and arcade games. Perfect for friendly competition and fun.",
-      "location": "Kings",
-      "tags": ["food", "excursion", "games"]
-    },
-    {
-      "name": "Late Night IHOP",
-      "date": "09/02",
-      "time": "8:45 PM - 11:00 PM",
-      "description": "Late night pancakes and conversation at IHOP. Great way to end the day!",
-      "location": "IHOP",
-      "tags": ["food", "excursion"]
-    },
-    {
-      "name": "Battle Canoes",
-      "date": "09/03",
-      "time": "2:00 PM - 5:15 PM",
-      "description": "Exciting canoe battles on the Charles River! Team up with brothers for epic water battles.",
-      "location": "Charles River",
-      "tags": ["excursion"]
-    },
-    {
-      "name": "Mediterranean Dinner*",
-      "date": "09/03",
-      "time": "5:15 PM - 7:30 PM",
-      "description": "Elegant Mediterranean dinner with brothers. Invite only event.",
-      "location": "ZBT House",
-      "tags": ["excursion", "invite_only"]
-    },
-    {
-      "name": "Level 99*",
-      "date": "09/03",
-      "time": "8:00 PM - 10:00 PM",
-      "description": "Exclusive gaming experience at Level 99. Invite only event.",
-      "location": "Level 99",
-      "tags": ["excursion", "invite_only", "games"]
-    },
-    {
-      "name": "Rock Climbing*",
-      "date": "09/04",
-      "time": "5:00 PM - 7:30 PM",
-      "description": "Indoor rock climbing adventure. Equipment provided. Invite only event.",
-      "location": "Rock Climbing Gym",
-      "tags": ["excursion", "invite_only", "games"]
-    },
-    {
-      "name": "Fried Chicken Dinner*",
-      "date": "09/04",
-      "time": "7:30 PM - 10:00 PM",
-      "description": "Delicious fried chicken dinner with brothers. Invite only event.",
-      "location": "ZBT House",
-      "tags": ["food", "invite_only"]
-    },
-    {
-      "name": "Sunset Boat Cruise*",
-      "date": "09/05",
-      "time": "5:00 PM - 9:00 PM",
-      "description": "Beautiful sunset cruise on the Charles River. Perfect ending to rush week. Invite only event.",
-      "location": "Charles River",
-      "tags": ["excursion", "invite_only"]
-    }
-  ]
-} 
+	"start_date": "08/30/2025",
+	"end_date": "09/04/2025",
+	"events": [
+		{
+			"name": "Raising Canes and Outdoor Games",
+			"date": "08/30",
+			"time": "1:00 PM - 4:00 PM",
+			"description": "Come to Briggs Field C for Cane's chicken, spikeball, soccer, ultimate, football, and more! Veg options available.",
+			"location": "Briggs Field C",
+			"tags": ["food", "games"]
+		},
+		{
+			"name": "Sushi and Poker",
+			"date": "08/30",
+			"time": "5:00 PM - 8:00 PM",
+			"description": "Come join the brothers of ZBT for our signature poker night! We'll serve sushi and give out over $1000 in prizes, including airpods, a drone, speakers, and more. All skill levels welcome; we'll teach you how to play.",
+			"location": "Lobby 13",
+			"tags": ["food", "games"]
+		},
+		{
+			"name": "Brunch with the Brothers",
+			"date": "08/31",
+			"time": "11:00 AM - 1:30 PM",
+			"description": "Start your day strong with a custom pancake stack while chatting with the brothers of ZBT! Come meet us, chill, and enjoy a full pancake bar with an extensive array of tppings.",
+			"location": "Kresge Oval",
+			"tags": ["food"]
+		},
+		{
+			"name": "Sky Zone",
+			"date": "08/31",
+			"time": "2:00 PM - 4:00 PM",
+			"description": "Jump, flip, and fly with ZBT at Sky Zone! Meet at Maseeh or call TBD for a ride.",
+			"location": "Sky Zone Everett",
+			"tags": ["excursion"]
+		},
+		{
+			"name": "Thai Food and House Tours",
+			"date": "08/31",
+			"time": "5:00 PM - 7:00 PM",
+			"description": "Meet the brothers, tour the ZBT house, and enjoy some of Boston's best thai food! Meet at the bus stop in front of Maseeh or call us at TBD for a ride.",
+			"location": "ZBT House",
+			"tags": ["food"]
+		},
+		{
+			"name": "Mini Golf",
+			"date": "08/31",
+			"time": "7:00 PM - 10:00 PM",
+			"description": "Putt your way to a great time with the brothers of ZBT! Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation will be provided from Thai dinner.",
+			"location": "McGolf",
+			"tags": ["excursion", "games"]
+		},
+		{
+			"name": "Go Karting",
+			"date": "09/01",
+			"time": "12:30 PM - 5:00 PM",
+			"description": "Join the brothers of ZBT for our rendition of Fast and Furious! Meet at the bus stop in front of Maseeh or call us at TBD for a ride.",
+			"location": "K1 Speed",
+			"tags": ["excursion"]
+		},
+		{
+			"name": "Bowling, Arcade, and Diner Food",
+			"date": "09/01",
+			"time": "5:15 PM - 8:45 PM",
+			"description": "Have some spare time? Hungry? Whether you strike it lucky or end up in the gutter, bowling with the brothers of ZBT will be a great time. Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation from go-karting will be provided.",
+			"location": "Kings Dining & Entertainment Seaport",
+			"tags": ["excursion", "games", "food"]
+		},
+		{
+			"name": "Late Night IHOP",
+			"date": "09/01",
+			"time": "8:45 PM - 11:00 PM",
+			"description": "Up late? Join ZBT in eating America’s best pancakes at a late-night run to IHOP. Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation from bowling will be provided.",
+			"location": "IHOP",
+			"tags": ["food"]
+		},
+		{
+			"name": "Rock Climbing",
+			"date": "09/02",
+			"time": "2:00 PM - 4:30 PM",
+			"description": "Climb new heights with the brothers of ZBT!",
+			"location": "Rock Spot Climbing: Brookline",
+			"tags": ["excursion", "invite_only"]
+		},
+		{
+			"name": "Sunset Kayaking",
+			"date": "09/02",
+			"time": "5:00 PM - 7:00 PM",
+			"description": "Grab a paddle and row around with the brothers of ZBT!",
+			"location": "Paddle Boston",
+			"tags": ["excursion", "invite_only"]
+		},
+		{
+			"name": "Mediterranean Dinner",
+			"date": "09/02",
+			"time": "7:30 PM - 10:00 PM",
+			"description": "Join ZBT for a chill night of Mediterranean eats and good company!",
+			"location": "ZBT House",
+			"tags": ["food", "invite_only"]
+		},
+		{
+			"name": "Winner Winner [Korean Fried] Chicken Dinner",
+			"date": "09/03",
+			"time": "5:00 PM - 7:30 PM",
+			"description": "Come join ZBT for some delicious bonchon chicken and good times. Veg options available.",
+			"location": "ZBT House",
+			"tags": ["food", "invite_only"]
+		},
+		{
+			"name": "Level 99",
+			"date": "09/03",
+			"time": "7:30 PM - 10:00 PM",
+			"description": "A night of mental puzzles, physical challenges, and crushing your friends in competitions!",
+			"location": "Level99",
+			"tags": ["excursion", "games", "invite_only"]
+		},
+		{
+			"name": "Sunset Boat Cruise",
+			"date": "09/04",
+			"time": "5:00 PM - 9:00 PM",
+			"description": "Enjoy a sunset boat cruise over the Charles River! Food will be provided.",
+			"location": "Odyssey Boston",
+			"tags": ["excursion", "food", "invite_only"]
+		}
+	]
+}

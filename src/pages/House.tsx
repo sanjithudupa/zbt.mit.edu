@@ -5,7 +5,7 @@ const House = () => {
   const amenities = [
     {
       icon: <Car size={24} className="text-blue-600" />,
-      title: '12-Seater Van',
+      title: '15-Seater Van',
       description: 'Van for transportation to and from campus, retreats, and more'
     },
     {
