@@ -57,6 +57,17 @@
       "littles": []
     },
     {
+      "id": "austin_chen",
+      "name": "Austin Chen",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Member of Beta Tau class, Class of 2027.",
+      "role": "",
+      "rush_order": 16,
+      "big": "sunwoo_lee",
+      "littles": ["vishal_nandakumar"]
+    },
+    {
       "id": "canyon_neyman",
       "name": "Canyon Neyman",
       "zbt_class": "beta tau",
@@ -469,7 +480,7 @@
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Hi I'm Sanjith from Novi, Michigan. I'm interested in robotics, I run HackMIT, I'm perpetually conflicted between 6-3 and 6-5 (6-2 to oldheads), and I enjoy solving flow free puzzles",
-      "role": "tech chair",
+      "role": "webmaster",
       "rush_order": 3,
       "big": "shreyas_shrivastava",
       "littles": []

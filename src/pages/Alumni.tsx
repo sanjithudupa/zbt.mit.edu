@@ -53,7 +53,7 @@ const Alumni = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Brotherhood Composites</h3>
-                  <img src="/images/history/archives.png" alt="Composites Archive Preview" className="w-full h-48 object-cover rounded-lg mb-4" />
+                  <img src="/images/alumni/archives.png" alt="Composites Archive Preview" className="w-full h-48 object-cover rounded-lg mb-4" />
                   <p className="text-gray-600 mb-4">
                     An archive of the brotherhood composites dating back to 1960s.
                   </p>
@@ -68,7 +68,7 @@ const Alumni = () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Big-Little Lines</h3>
-                  <img src="/images/history/geneology.png" alt="Genealogy Preview" className="w-full h-48 object-cover rounded-lg mb-4" />
+                  <img src="/images/alumni/geneology.png" alt="Genealogy Preview" className="w-full h-48 object-cover rounded-lg mb-4" />
                   <p className="text-gray-600 mb-4">
                     An interactive map of all big-little lines recorded since the Alpha Gamma class.
                   </p>
@@ -184,15 +184,15 @@ const Alumni = () => {
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Mail size={24} className="text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Alumni Newsletter</h3>
+              <h3 className="text-lg font-semibold mb-2">Contact the Alumni Chair</h3>
               <p className="text-sm text-white/80 mb-4">
-                Stay updated with chapter news and alumni achievements
+                Stay updated with chapter news and alumni achievements.
               </p>
               <a
                 href={`mailto:${execContacts.alumniChair}`}
                 className="text-white hover:text-gray-200 font-medium"
               >
-                Subscribe →
+                Email →
               </a>
             </div>
 
@@ -205,7 +205,7 @@ const Alumni = () => {
                 Contribute to house improvements and other chapter needs
               </p>
               <a
-                href="mailto:donations@zbt.mit.edu"
+                href="https://www.paypal.com/donate?token=TH3WnlG-utIpgvtKblBJfIZOSwD4iWTOdgVXBuaVCxq15CdAMxjIYFM5_yzZMl1PlF5bN6iEqsa39qdn"
                 className="text-white hover:text-gray-200 font-medium"
               >
                 Donate →
@@ -214,12 +214,6 @@ const Alumni = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`mailto:${execContacts.alumniChair}`}
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
-            >
-              Contact Alumni Chair
-            </a>
             <a
               href="https://maps.app.goo.gl/wsGH25zVRsR6Fggx5"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center"

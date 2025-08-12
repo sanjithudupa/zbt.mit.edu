@@ -145,10 +145,10 @@ const Rush = () => {
       </section>
 
       {/* Rush Schedule */}
-      <section className="py-16">
+      <section className="py-16" id="schedule">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Rush Schedule</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{new Date(rushData.start_date).getFullYear()} {[7, 8].includes(new Date(rushData.start_date).getMonth()) ? "Fall" : "Spring"} Rush Schedule</h2>
             <p className="text-xl text-gray-600">
               Join us for a week of exciting events and get to know the ZBT brotherhood
             </p>
@@ -198,7 +198,7 @@ const Rush = () => {
             ) : (
               <div className="space-y-6">
                 {Object.entries(eventsByDay).map(([day, events]) => (
-                  <div key={day} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                  <div key={day} className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
                     <div className="bg-blue-600 text-white px-6 py-4">
                       <h3 className="text-xl font-semibold">{formatDate(day)}</h3>
                     </div>

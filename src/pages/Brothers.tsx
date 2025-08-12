@@ -308,7 +308,7 @@ const Brothers = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" id="active-brothers">Active Brothers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Active Brothers</h2>
             <p className="text-xl text-gray-600 mb-8">
               Get to know the brotherhood
             </p>
@@ -414,7 +414,7 @@ const Brothers = () => {
                     history.scrollRestoration = 'manual'
                     
                     // Remove hash to trigger the hash change handler
-                    window.location.hash = 'active-brothers'
+                    window.location.hash = 'x'
                     
                     // Re-enable scroll restoration after a short delay
                     setTimeout(() => {
