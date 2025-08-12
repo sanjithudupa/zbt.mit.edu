@@ -7,11 +7,16 @@ if [[ -z "$KERB" ]]; then
   exit 1
 fi
 
+echo "#### STARTING DEPLOYMENT, YOU WILL BE PROMPTED FOR MIT AUTH TWICE ####"
+echo "if the connection fails for either remote step, ensure you have no other ssh connections to athena, wait a bit, and try again"
+
 echo "### Building Vite app... ###"
 yarn run build
 
 echo "### Copying ./dist to ${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/ ###"
 scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"
+
+sleep 3
 
 echo "### Backing up old files and setting permissions for new files... ###"
 ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
