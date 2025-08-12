@@ -49,7 +49,7 @@ const Alumni = () => {
             </div>
 
             <div id="alumni-tools" className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Alumni Tools</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" id="tools">Alumni Tools</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Brotherhood Composites</h3>
@@ -189,7 +189,7 @@ const Alumni = () => {
                 Stay updated with chapter news and alumni achievements
               </p>
               <a
-                href={`mailto:${execContacts.alumniChair.email}`}
+                href={`mailto:${execContacts.alumniChair}`}
                 className="text-white hover:text-gray-200 font-medium"
               >
                 Subscribe →
@@ -215,7 +215,7 @@ const Alumni = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`mailto:${execContacts.alumniChair.email}`}
+              href={`mailto:${execContacts.alumniChair}`}
               className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
               Contact Alumni Chair

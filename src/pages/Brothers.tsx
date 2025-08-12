@@ -11,6 +11,8 @@ interface Brother {
   bio: string
   role: string
   rush_order: number
+  big: string
+  littles: string[]
 }
 
 interface BrotherWithImage extends Brother {
@@ -28,6 +30,7 @@ const Brothers = () => {
   const [selectedZbtClass, setSelectedZbtClass] = useState(mostRecentClass)
   const [selectedBrother, setSelectedBrother] = useState<BrotherWithImage | null>(null)
   const [brothersWithImages, setBrothersWithImages] = useState<BrotherWithImage[]>([])
+  const [showLittlesTooltip, setShowLittlesTooltip] = useState(false)
 
   // Function to get image URL for a brother
   const getBrotherImageUrl = (brother: Brother): string => {
@@ -84,6 +87,67 @@ const Brothers = () => {
 
     loadBrotherImages()
   }, [brothers])
+
+  // Handle URL hash for opening brother modal
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) // Remove the # symbol
+      if (hash) {
+        const brother = brothersWithImages.find(b => b.id === hash)
+        if (brother) {
+          setSelectedBrother(brother)
+          // Switch to the brother's class tab if it's different from current selection
+          setSelectedZbtClass(brother.zbt_class)
+        }
+      } else {
+        setSelectedBrother(null)
+      }
+    }
+
+    // Check hash on mount
+    handleHashChange()
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange)
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [brothersWithImages])
+
+  // Function to navigate to brother without scrolling
+  const navigateToBrother = (brotherId: string) => {
+    // Temporarily disable scroll restoration
+    const scrollRestoration = history.scrollRestoration
+    history.scrollRestoration = 'manual'
+    
+    // Set the hash to trigger the hash change handler
+    window.location.hash = brotherId
+    
+    // Re-enable scroll restoration after a short delay
+    setTimeout(() => {
+      history.scrollRestoration = scrollRestoration
+    }, 100)
+    
+    setSelectedBrother(null)
+  }
+
+  // Close littles tooltip when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => {
+      if (showLittlesTooltip) {
+        setShowLittlesTooltip(false)
+      }
+    }
+
+    if (showLittlesTooltip) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [showLittlesTooltip])
 
   // Handle image load events
   const handleImageLoad = (brotherId: string) => {
@@ -243,7 +307,7 @@ const Brothers = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Active Brothers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" id="active-brothers">Active Brothers</h2>
             <p className="text-xl text-gray-600 mb-8">
               Get to know the brotherhood
             </p>
@@ -271,7 +335,10 @@ const Brothers = () => {
               <div 
                 key={brother.id} 
                 className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow cursor-pointer w-full max-w-sm"
-                onClick={() => setSelectedBrother(brother)}
+                onClick={() => {
+                  setSelectedBrother(brother)
+                  window.location.hash = brother.id
+                }}
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden relative">
                   {brother.imageExists && !brother.imageError ? (
@@ -340,7 +407,21 @@ const Brothers = () => {
               <div className="flex justify-between items-start mb-6">
                 <h2 className="text-3xl font-bold text-gray-900">{selectedBrother.name}</h2>
                 <button
-                  onClick={() => setSelectedBrother(null)}
+                  onClick={() => {
+                    // Temporarily disable scroll restoration
+                    const scrollRestoration = history.scrollRestoration
+                    history.scrollRestoration = 'manual'
+                    
+                    // Remove hash to trigger the hash change handler
+                    window.location.hash = 'active-brothers'
+                    
+                    // Re-enable scroll restoration after a short delay
+                    setTimeout(() => {
+                      history.scrollRestoration = scrollRestoration
+                    }, 100)
+                    
+                    setSelectedBrother(null)
+                  }}
                   className="text-gray-400 hover:text-gray-600"
                 >
                   <X size={24} />
@@ -392,6 +473,74 @@ const Brothers = () => {
                   </div>
                 </div>
               </div>
+              
+              {/* Navigation buttons */}
+              <div className="flex justify-between items-center mt-6 pt-6 border-t border-gray-200">
+                {/* Left side - Big button */}
+                <div className="flex-1 flex justify-start">
+                  {selectedBrother.big && (() => {
+                    const big = brothersWithImages.find(b => b.id === selectedBrother.big)
+                    return big ? (
+                      <button
+                        onClick={() => navigateToBrother(selectedBrother.big)}
+                        className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                      >
+                        <span className="text-gray-400">←</span>
+                        <span>Big ({big.name})</span>
+                      </button>
+                    ) : null
+                  })()}
+                </div>
+                
+                {/* Right side - Little button */}
+                <div className="flex-1 flex justify-end">
+                  {selectedBrother.littles && selectedBrother.littles.length > 0 && (
+                    <div className="relative">
+                      {selectedBrother.littles.length === 1 ? (() => {
+                        const little = brothersWithImages.find(b => b.id === selectedBrother.littles[0])
+                        return little ? (
+                          <button
+                                                      onClick={() => navigateToBrother(selectedBrother.littles[0])}
+                            className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                          >
+                            <span>Little ({little.name})</span>
+                            <span className="text-gray-400">→</span>
+                          </button>
+                        ) : null
+                      })() : (
+                        <button
+                          onClick={() => setShowLittlesTooltip(!showLittlesTooltip)}
+                          className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                        >
+                          <span>Little (multiple)</span>
+                          <span className="text-gray-400">→</span>
+                        </button>
+                      )}
+                      
+                      {/* Tooltip for multiple littles */}
+                      {showLittlesTooltip && selectedBrother.littles.length > 1 && (
+                        <div className="absolute bottom-full right-0 mb-2 bg-white border border-gray-200 rounded-lg shadow-lg p-2 min-w-32 z-10">
+                          {selectedBrother.littles.map((littleId) => {
+                            const little = brothersWithImages.find(b => b.id === littleId)
+                            return little ? (
+                              <button
+                                key={littleId}
+                                                              onClick={() => {
+                                navigateToBrother(littleId)
+                                setShowLittlesTooltip(false)
+                              }}
+                                className="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
+                              >
+                                {little.name}
+                              </button>
+                            ) : null
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -413,7 +562,7 @@ const Brothers = () => {
               Rush ZBT
             </a>
             <a
-              href={`mailto:${execContacts.president.email}`}
+              href={`mailto:${execContacts.president}`}
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center"
             >
               Contact President

@@ -8,7 +8,9 @@
       "graduating_class": 2027,
       "bio": "Head of Food",
       "role": "Head of Food",
-      "rush_order": 1
+      "rush_order": 1,
+      "big": "frank_liu",
+      "littles": []
     },
     {
       "id": "advay_goel",
@@ -17,7 +19,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "social chair",
-      "rush_order": 3
+      "rush_order": 3,
+      "big": "veer_gadodia",
+      "littles": ["shaurya_agrawal"]
     },
     {
       "id": "andrew_wen",
@@ -26,7 +30,9 @@
       "graduating_class": 2027,
       "bio": "Math + CS student seeking to understand fundamental truths about the world",
       "role": "",
-      "rush_order": 12
+      "rush_order": 12,
+      "big": "naail_lakhani",
+      "littles": ["joshua_liu"]
     },
     {
       "id": "benjamin_fan",
@@ -35,7 +41,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "risk chair",
-      "rush_order": 9
+      "rush_order": 9,
+      "big": "nick_ouyang",
+      "littles": ["joshua_jang"]
     },
     {
       "id": "brady_cruse",
@@ -44,7 +52,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "",
-      "rush_order": 15
+      "rush_order": 15,
+      "big": "raymond_pan",
+      "littles": []
     },
     {
       "id": "canyon_neyman",
@@ -53,7 +63,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "midnight maker",
-      "rush_order": 5
+      "rush_order": 5,
+      "big": "christian_fletcher",
+      "littles": []
     },
     {
       "id": "dylan_yu",
@@ -62,7 +74,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "risk chair",
-      "rush_order": 6
+      "rush_order": 6,
+      "big": "daniel_guan",
+      "littles": ["humaid_alhuthali"]
     },
     {
       "id": "eddie_qiao",
@@ -71,7 +85,9 @@
       "graduating_class": 2027,
       "bio": "Hi! I'm a junior from San Diego studying 6-3 and 18. In my free time, I enjoy watching sports, climbing, and trying new restaurants.",
       "role": "rush chair",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "richard_chen",
+      "littles": ["aaron_hu"]
     },
     {
       "id": "eli_park",
@@ -80,7 +96,9 @@
       "graduating_class": 2027,
       "bio": "Eli is involved in Asian Christian Fellowship and Men's Ultimate Frisbee. In his free time he enjoys playing golf, rooting for NC State, and playing the guitar.",
       "role": "",
-      "rush_order": 7
+      "rush_order": 7,
+      "big": "daniel_xu",
+      "littles": ["colton_kim"]
     },
     {
       "id": "jack_breckling",
@@ -89,7 +107,9 @@
       "graduating_class": 2026,
       "bio": "Just a guy who loves everything to do with the mountains from casual hiking to hanging off the side of a cliff from an ice axe.",
       "role": "",
-      "rush_order": 10
+      "rush_order": 10,
+      "big": "chris_wong",
+      "littles": ["kyran_siddiqui"]
     },
     {
       "id": "nai_abbeyquaye",
@@ -98,7 +118,9 @@
       "graduating_class": 2027,
       "bio": "Hello, my name is Nai and I'm a Course 2 from Holden, MA. In my free time, I am a proud Chelsea Football Club Fan and a member of the MIT Motorsports team.",
       "role": "van chair",
-      "rush_order": 2
+      "rush_order": 2,
+      "big": "andrew_diaz",
+      "littles": ["timothy_mathew"]
     },
     {
       "id": "pranav_bala",
@@ -107,7 +129,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "BDD",
-      "rush_order": 0
+      "rush_order": 0,
+      "big": "veer_gadodia",
+      "littles": []
     },
     {
       "id": "shreyas_shrivastava",
@@ -116,7 +140,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "",
-      "rush_order": 4
+      "rush_order": 4,
+      "big": "deepu_pradeep",
+      "littles": ["sanjith_udupa"]
     },
     {
       "id": "stephen_lee",
@@ -125,7 +151,9 @@
       "graduating_class": 2027,
       "bio": "6-4 from CT and lifting enjoyer.",
       "role": "social chair",
-      "rush_order": 11
+      "rush_order": 11,
+      "big": "eric_liu",
+      "littles": []
     },
     {
       "id": "yusuf_young",
@@ -134,7 +162,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Tau class, Class of 2027.",
       "role": "",
-      "rush_order": 13
+      "rush_order": 13,
+      "big": "collin_lung",
+      "littles": []
     },
     {
       "id": "nakul_shenoy",
@@ -143,7 +173,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 0
+      "rush_order": 0,
+      "big": "boris_velasevic",
+      "littles": ["nick_ouyang"]
     },
     {
       "id": "chris_wong",
@@ -152,7 +184,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 1
+      "rush_order": 1,
+      "big": "",
+      "littles": ["jack_breckling"]
     },
     {
       "id": "naail_lakhani",
@@ -161,7 +195,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 2
+      "rush_order": 2,
+      "big": "michael_huang",
+      "littles": ["andrew_wen"]
     },
     {
       "id": "justin_shan",
@@ -170,7 +206,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 3
+      "rush_order": 3,
+      "big": "albert_xing",
+      "littles": ["daniel_guan"]
     },
     {
       "id": "saketh_gabbita",
@@ -179,7 +217,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 6
+      "rush_order": 6,
+      "big": "erick_gbordzoe",
+      "littles": []
     },
     {
       "id": "brandon_lei",
@@ -188,7 +228,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 5
+      "rush_order": 5,
+      "big": "ryan_kim",
+      "littles": ["daniel_xu"]
     },
     {
       "id": "evan_ren",
@@ -197,7 +239,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 4
+      "rush_order": 4,
+      "big": "raymond_tran",
+      "littles": ["deepu_pradeep"]
     },
     {
       "id": "alvin_chen",
@@ -206,7 +250,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 7
+      "rush_order": 7,
+      "big": "patrick_zhang",
+      "littles": ["richard_chen"]
     },
     {
       "id": "ben_kang",
@@ -215,7 +261,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "allen_chen",
+      "littles": ["jeremy_yu"]
     },
     {
       "id": "ben_wu",
@@ -224,7 +272,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 9
+      "rush_order": 9,
+      "big": "shree_mohan",
+      "littles": ["veer_gadodia"]
     },
     {
       "id": "vittal_thirumalai",
@@ -233,7 +283,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 10
+      "rush_order": 10,
+      "big": "jonathan_shoemaker",
+      "littles": ["frank_liu"]
     },
     {
       "id": "vishaal_ram",
@@ -242,7 +294,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 11
+      "rush_order": 11,
+      "big": "ezra_erives",
+      "littles": ["andrew_diaz"]
     },
     {
       "id": "eric_liu",
@@ -251,7 +305,9 @@
       "graduating_class": 2025,
       "bio": "Member of Beta Rho class, Class of 2025.",
       "role": "",
-      "rush_order": 12
+      "rush_order": 12,
+      "big": "jerry_zhao",
+      "littles": ["stephen_lee"]
     },
     {
       "id": "andrew_diaz",
@@ -260,7 +316,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 1
+      "rush_order": 1,
+      "big": "vishaal_ram",
+      "littles": ["nai_abbeyquaye"]
     },
     {
       "id": "christian_fletcher",
@@ -269,7 +327,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 11
+      "rush_order": 11,
+      "big": "jerry_zhao",
+      "littles": ["canyon_neyman"]
     },
     {
       "id": "daniel_guan",
@@ -278,16 +338,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 3
-    },
-    {
-      "id": "nick_ouyang",
-      "name": "Nick Ouyang",
-      "zbt_class": "beta sigma",
-      "graduating_class": 2025,
-      "bio": "Member of Beta Sigma class, Class of 2025.",
-      "role": "",
-      "rush_order": -1
+      "rush_order": 3,
+      "big": "justin_shan",
+      "littles": ["dylan_yu"]
     },
     {
       "id": "daniel_xu",
@@ -296,7 +349,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 0
+      "rush_order": 0,
+      "big": "brandon_lei",
+      "littles": ["eli_park"]
     },
     {
       "id": "deepu_pradeep",
@@ -305,7 +360,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "treasurer",
-      "rush_order": 2
+      "rush_order": 2,
+      "big": "evan_ren",
+      "littles": ["shreyas_shrivastava"]
     },
     {
       "id": "frank_liu",
@@ -314,7 +371,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "house chair",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "vittal_thirumalai",
+      "littles": ["adrian_yordanov"]
     },
     {
       "id": "greycen_ren",
@@ -323,7 +382,20 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "president",
-      "rush_order": 9
+      "rush_order": 9,
+      "big": "ethan_zahid",
+      "littles": ["michael_wang"]
+    },
+    {
+      "id": "nick_ouyang",
+      "name": "Nick Ouyang",
+      "zbt_class": "beta sigma",
+      "graduating_class": 2025,
+      "bio": "Member of Beta Sigma class, Class of 2025.",
+      "role": "",
+      "rush_order": -1,
+      "big": "nakul_shenoy",
+      "littles": ["benjamin_fan"]
     },
     {
       "id": "jeremy_yu",
@@ -332,7 +404,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "vice president",
-      "rush_order": 4
+      "rush_order": 4,
+      "big": "ben_kang",
+      "littles": ["yinuo_song"]
     },
     {
       "id": "raymond_pan",
@@ -341,7 +415,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "sid_muppalla",
+      "littles": ["brady_cruse"]
     },
     {
       "id": "richard_chen",
@@ -350,7 +426,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 6
+      "rush_order": 6,
+      "big": "alvin_chen",
+      "littles": ["eddie_qiao"]
     },
     {
       "id": "sunwoo_lee",
@@ -359,7 +437,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 10
+      "rush_order": 10,
+      "big": "eric_wang",
+      "littles": ["austin_chen"]
     },
     {
       "id": "veer_gadodia",
@@ -368,7 +448,9 @@
       "graduating_class": 2026,
       "bio": "Member of Beta Sigma class, Class of 2026.",
       "role": "",
-      "rush_order": 5
+      "rush_order": 5,
+      "big": "ben_wu",
+      "littles": ["pranav_bala", "advay_goel"]
     },
     {
       "id": "kyran_siddiqui",
@@ -377,7 +459,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Upsilon class, Class of 2027.",
       "role": "social chair",
-      "rush_order": 10
+      "rush_order": 10,
+      "big": "jack_breckling",
+      "littles": []
     },
     {
       "id": "sanjith_udupa",
@@ -385,8 +469,10 @@
       "zbt_class": "beta upsilon",
       "graduating_class": 2028,
       "bio": "Hi I'm Sanjith from Novi, Michigan. I'm interested in robotics, I run HackMIT, I'm perpetually conflicted between 6-3 and 6-5 (6-2 to oldheads), and I enjoy solving flow free puzzles",
-      "role": "webmaster",
-      "rush_order": 3
+      "role": "tech chair",
+      "rush_order": 3,
+      "big": "shreyas_shrivastava",
+      "littles": []
     },
     {
       "id": "colton_kim",
@@ -395,7 +481,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "risk chair",
-      "rush_order": 0
+      "rush_order": 0,
+      "big": "eli_park",
+      "littles": []
     },
     {
       "id": "timothy_mathew",
@@ -404,7 +492,9 @@
       "graduating_class": 2028,
       "bio": "Hi! I'm Timmy, a '28 from Michigan majoring in 6-3 and 18. I'm a huge fan of hot chocolate, waterparks, and Nintendo music. You can find me stargazing, grinding Mario Kart Wii, or messing around on a piano!",
       "role": "",
-      "rush_order": 5
+      "rush_order": 5,
+      "big": "nai_abbeyquaye",
+      "littles": []
     },
     {
       "id": "joshua_liu",
@@ -413,7 +503,9 @@
       "graduating_class": 2028,
       "bio": "hi i like eating and i rly like chicago chinatown",
       "role": "",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "andrew_wen",
+      "littles": []
     },
     {
       "id": "aaron_hu",
@@ -422,7 +514,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 1
+      "rush_order": 1,
+      "big": "eddie_qiao",
+      "littles": []
     },
     {
       "id": "joshua_jang",
@@ -431,7 +525,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 6
+      "rush_order": 6,
+      "big": "benjamin_fan",
+      "littles": []
     },
     {
       "id": "humaid_alhuthali",
@@ -440,7 +536,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 2
+      "rush_order": 2,
+      "big": "dylan_yu",
+      "littles": []
     },
     {
       "id": "vishal_nandakumar",
@@ -449,7 +547,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 9
+      "rush_order": 9,
+      "big": "austin_chen",
+      "littles": []
     },
     {
       "id": "michael_wang",
@@ -458,7 +558,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 4
+      "rush_order": 4,
+      "big": "greycen_ren",
+      "littles": []
     },
     {
       "id": "pavan_jayaraman",
@@ -467,7 +569,9 @@
       "graduating_class": 2028,
       "bio": "hey I'm Pavan, I study physics and like to gym and be on my phone",
       "role": "",
-      "rush_order": 12
+      "rush_order": 12,
+      "big": "",
+      "littles": []
     },
     {
       "id": "jiarui_peng",
@@ -476,7 +580,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 13
+      "rush_order": 13,
+      "big": "",
+      "littles": []
     },
     {
       "id": "mateja_vukelic",
@@ -485,7 +591,9 @@
       "graduating_class": 2027,
       "bio": "Member of Beta Upsilon class, Class of 2027.",
       "role": "",
-      "rush_order": 14
+      "rush_order": 14,
+      "big": "",
+      "littles": []
     },
     {
       "id": "shaurya_agrawal",
@@ -494,7 +602,9 @@
       "graduating_class": 2028,
       "bio": "Member of Beta Upsilon class, Class of 2028.",
       "role": "",
-      "rush_order": 11
+      "rush_order": 11,
+      "big": "advay_goel",
+      "littles": []
     },
     {
       "id": "yinuo_song",
@@ -503,7 +613,9 @@
       "graduating_class": 2028,
       "bio": "Hi",
       "role": "",
-      "rush_order": 8
+      "rush_order": 8,
+      "big": "jeremy_yu",
+      "littles": []
     }
   ],
   "campusActivities": [
@@ -528,7 +640,6 @@
     {
       "name": "Asian Christian Fellowship",
       "description": "Inclusive Christian community for Asian students at MIT",
-      "link": "https://acf.mit.edu/",
       "icon": "Heart"
     }
   ]

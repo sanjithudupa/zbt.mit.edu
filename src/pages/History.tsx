@@ -208,7 +208,7 @@ const History = () => {
               Rush ZBT
             </a>
             <a
-              href="/alumni"
+              href="/alumni#tools"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center"
             >
               Connect with Alumni
