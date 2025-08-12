@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Users, Award, GraduationCap, MapPin, X, Code, Heart, TrendingUp, Diamond, ExternalLink } from 'lucide-react'
+import { Users, Award, GraduationCap, MapPin, X, Code, Heart, TrendingUp, Diamond } from 'lucide-react'
 import brothersData from '../data/brothersData.json'
 import execContacts from '../data/execContacts.json'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
 
 interface Brother {
   id: number

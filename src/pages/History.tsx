@@ -1,7 +1,4 @@
-import { Calendar, Award, Users, Star, BookOpen, Trophy, Home, GraduationCap } from 'lucide-react'
-import ClickableImage from '../components/ClickableImage'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
+import { Award, Users, Star, BookOpen, Trophy, Home, GraduationCap } from 'lucide-react'
 
 const History = () => {
   const timeline = [

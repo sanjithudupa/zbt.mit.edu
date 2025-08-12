@@ -1,8 +1,6 @@
 import { Mail, Users, GraduationCap, Heart } from 'lucide-react'
 import execContacts from '../data/execContacts.json'
 import ClickableImage from '../components/ClickableImage'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
 
 const Alumni = () => {
   return (

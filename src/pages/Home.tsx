@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Award, Heart, Calendar } from 'lucide-react'
+import { ArrowRight, Users, Award, Heart } from 'lucide-react'
 import zbtCrest from '../assets/images/zbt_crest.png'
 import GallerySet from '../components/GallerySet'
 import galleryData from '../data/galleryData.json'

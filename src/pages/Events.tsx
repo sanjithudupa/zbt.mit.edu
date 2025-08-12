@@ -1,7 +1,4 @@
-import { Calendar, Clock, MapPin, Users, Music, Heart, Home, Utensils, Gift } from 'lucide-react'
 import execContacts from '../data/execContacts.json'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
 import ClickableImage from '../components/ClickableImage'
 
 const Events = () => {

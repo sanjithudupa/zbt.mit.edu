@@ -1,22 +1,11 @@
 import { useState, useMemo } from 'react'
-import { Calendar, MapPin, Users, ArrowRight, Star, Mail, Phone, Filter, X } from 'lucide-react'
+import { Calendar, MapPin, Users, ArrowRight, Star, X } from 'lucide-react'
 import rushData from '../data/rushData.json'
 import execContacts from '../data/execContacts.json'
 import ClickableImage from '../components/ClickableImage'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
 
 const Rush = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
-
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case 'Star': return <Star size={24} className="text-blue-600" />
-      case 'Users': return <Users size={24} className="text-green-600" />
-      case 'MapPin': return <MapPin size={24} className="text-purple-600" />
-      default: return <Star size={24} className="text-blue-600" />
-    }
-  }
 
   // Get unique tags from events
   const allTags = useMemo(() => {

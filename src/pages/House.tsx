@@ -1,7 +1,5 @@
-import { MapPin, Phone, Mail, Wifi, Utensils, Car, Users, Home, Star, Computer, ExternalLink, Bike } from 'lucide-react'
+import { MapPin, Wifi, Utensils, Car, Users, Star, Computer, Bike } from 'lucide-react'
 import ClickableImage from '../components/ClickableImage'
-import GallerySet from '../components/GallerySet'
-import galleryData from '../data/galleryData.json'
 
 const House = () => {
   const amenities = [
@@ -34,29 +32,6 @@ const House = () => {
       icon: <Star size={24} className="text-yellow-600" />,
       title: 'Common Areas',
       description: 'Spacious lounges and social spaces, including an XBox, Wii, ping pong, pool, a golf simulator, and more'
-    }
-  ]
-
-  const rooms = [
-    {
-      type: 'Single Rooms',
-      count: 15,
-      description: 'Private rooms for individual brothers'
-    },
-    {
-      type: 'Double Rooms',
-      count: 8,
-      description: 'Shared rooms for two brothers'
-    },
-    {
-      type: 'Study Rooms',
-      count: 3,
-      description: 'Dedicated study spaces'
-    },
-    {
-      type: 'Common Areas',
-      count: 5,
-      description: 'Lounges, kitchen, and social spaces'
     }
   ]
 
