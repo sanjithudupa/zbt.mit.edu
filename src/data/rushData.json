@@ -30,7 +30,7 @@
 			"name": "Sky Zone",
 			"date": "08/31",
 			"time": "2:00 PM - 4:00 PM",
-			"description": "Jump, flip, and fly with ZBT at Sky Zone! Meet at Maseeh or call TBD for a ride.",
+			"description": "Jump, flip, and fly with ZBT at Sky Zone! Meet at Maseeh or call us for a ride.",
 			"location": "Sky Zone Everett",
 			"tags": ["excursion"]
 		},
@@ -38,7 +38,7 @@
 			"name": "Thai Food and House Tours",
 			"date": "08/31",
 			"time": "5:00 PM - 7:00 PM",
-			"description": "Meet the brothers, tour the ZBT house, and enjoy some of Boston's best thai food! Meet at the bus stop in front of Maseeh or call us at TBD for a ride.",
+			"description": "Meet the brothers, tour the ZBT house, and enjoy some of Boston's best thai food! Meet at the bus stop in front of Maseeh or call us for a ride.",
 			"location": "ZBT House",
 			"tags": ["food"]
 		},
@@ -46,7 +46,7 @@
 			"name": "Mini Golf",
 			"date": "08/31",
 			"time": "7:00 PM - 10:00 PM",
-			"description": "Putt your way to a great time with the brothers of ZBT! Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation will be provided from Thai dinner.",
+			"description": "Putt your way to a great time with the brothers of ZBT! Meet at the bus stop in front of Maseeh or call us for a ride. Transportation will be provided from Thai dinner.",
 			"location": "McGolf",
 			"tags": ["excursion", "games"]
 		},
@@ -54,7 +54,7 @@
 			"name": "Go Karting",
 			"date": "09/01",
 			"time": "12:30 PM - 5:00 PM",
-			"description": "Join the brothers of ZBT for our rendition of Fast and Furious! Meet at the bus stop in front of Maseeh or call us at TBD for a ride.",
+			"description": "Join the brothers of ZBT for our rendition of Fast and Furious! Meet at the bus stop in front of Maseeh or call us for a ride.",
 			"location": "K1 Speed",
 			"tags": ["excursion"]
 		},
@@ -62,7 +62,7 @@
 			"name": "Bowling, Arcade, and Diner Food",
 			"date": "09/01",
 			"time": "5:15 PM - 8:45 PM",
-			"description": "Have some spare time? Hungry? Whether you strike it lucky or end up in the gutter, bowling with the brothers of ZBT will be a great time. Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation from go-karting will be provided.",
+			"description": "Have some spare time? Hungry? Whether you strike it lucky or end up in the gutter, bowling with the brothers of ZBT will be a great time. Meet at the bus stop in front of Maseeh or call us for a ride. Transportation from go-karting will be provided.",
 			"location": "Kings Dining & Entertainment Seaport",
 			"tags": ["excursion", "games", "food"]
 		},
@@ -70,7 +70,7 @@
 			"name": "Late Night IHOP",
 			"date": "09/01",
 			"time": "8:45 PM - 11:00 PM",
-			"description": "Up late? Join ZBT in eating America’s best pancakes at a late-night run to IHOP. Meet at the bus stop in front of Maseeh or call us at TBD for a ride. Transportation from bowling will be provided.",
+			"description": "Up late? Join ZBT in eating America’s best pancakes at a late-night run to IHOP. Meet at the bus stop in front of Maseeh or call us for a ride. Transportation from bowling will be provided.",
 			"location": "IHOP",
 			"tags": ["food"]
 		},
