@@ -83,20 +83,23 @@ const Rush = () => {
 
   const getTagColor = (tag: string) => {
     const colors: { [key: string]: string } = {
-      food: 'bg-orange-100 text-orange-800',
-      social: 'bg-blue-100 text-blue-800',
-      outdoor: 'bg-green-100 text-green-800',
-      sports: 'bg-emerald-100 text-emerald-800',
-      games: 'bg-purple-100 text-purple-800',
-      house: 'bg-indigo-100 text-indigo-800',
-      informational: 'bg-gray-100 text-gray-800',
-      fun: 'bg-pink-100 text-pink-800',
-      adventure: 'bg-yellow-100 text-yellow-800',
-      formal: 'bg-purple-100 text-purple-800',
-      invite_only: 'bg-red-100 text-red-800',
-      late_night: 'bg-slate-100 text-slate-800'
+      food: 'bg-zbt-gold-100 text-zbt-gold-800',
+      excursion: 'bg-zbt-blue-100 text-zbt-blue-800',
+      games: 'bg-zbt-grey-100 text-zbt-grey-700',
+      invite_only: 'bg-green-100 text-green-800',
     }
-    return colors[tag] || 'bg-gray-100 text-gray-800'
+    return colors[tag] || 'bg-zbt-grey-100 text-zbt-grey-700'
+  }
+
+  const isInviteOnly = (event: any) => {
+    return event.tags && event.tags.includes('invite_only')
+  }
+
+  const getObfuscatedLocation = (event: any) => {
+    if (isInviteOnly(event)) {
+      return event.location.split('').sort(function(){return 0.5-Math.random()}).join('');
+    }
+    return event.location
   }
 
   const toggleTag = (tag: string) => {
@@ -184,15 +187,15 @@ const Rush = () => {
         `
       }} />
       {/* Hero Section */}
-      <section className="relative text-white" style={{ backgroundImage: 'url(/images/hero/rush.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/80 to-blue-700/80 backdrop-blur-sm"></div>
+      <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/rush.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Rush ZBT!</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Rush ZBT!</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Rush is a week-long period at the start of the school year at MIT, when freshmen get to meet us and see all of the other fraternities and living options available to them.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
               <div className="flex items-center justify-center space-x-4 mb-4">
                 <Calendar size={24} />
                 <span className="text-lg font-semibold">
@@ -208,64 +211,64 @@ const Rush = () => {
         </div>
       </section>
 
-      {/* Why Rush ZBT */}
-      <section className="py-16 bg-gray-50">
+      {/* Why Rush ZBT
+      <section className="py-16 section-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Rush ZBT?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover what makes ZBT Xi Chapter the premier fraternity experience at MIT
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Why Rush ZBT?</h2>
+            <p className="text-xl text-zbt-grey-600 max-w-3xl mx-auto">
+              Come rush and find out!
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Star size={24} className="text-blue-600" />
+            <div className="elegant-card">
+              <div className="w-12 h-12 bg-zbt-blue-100 rounded-xl flex items-center justify-center mb-6">
+                <Star size={24} className="text-zbt-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Academic Excellence</h3>
-              <p className="text-gray-600">
-                Consistently high academic standards with academic support systems and study groups to help you succeed.
+              <h3 className="text-xl font-semibold text-zbt-grey-900 mb-4 font-sans">Excellence</h3>
+              <p className="text-zbt-grey-600">
+                Consistently high academic, athletic, and social standards that help brothers succeed in all aspects of their school lives.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                <Users size={24} className="text-green-600" />
+            <div className="elegant-card">
+              <div className="w-12 h-12 bg-zbt-gold-100 rounded-xl flex items-center justify-center mb-6">
+                <Users size={24} className="text-zbt-gold-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Diverse Brotherhood</h3>
-              <p className="text-gray-600">
-                Brothers from across the United States and various foreign countries, representing all majors.
+              <h3 className="text-xl font-semibold text-zbt-grey-900 mb-4 font-sans">Diverse Brotherhood</h3>
+              <p className="text-zbt-grey-600">
+                Brothers from across the United States and various foreign countries, representing a wide range of majors.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                <MapPin size={24} className="text-purple-600" />
+            <div className="elegant-card">
+              <div className="w-12 h-12 bg-zbt-blue-100 rounded-xl flex items-center justify-center mb-6">
+                <MapPin size={24} className="text-zbt-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Beautiful House</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold text-zbt-grey-900 mb-4 font-sans">Beautiful House</h3>
+              <p className="text-zbt-grey-600">
                 Our home in Brookline provides a comfortable and welcoming environment for all brothers.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Rush Schedule */}
       <section className="py-16" id="schedule">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{new Date(rushData.start_date).getFullYear()} {[7, 8].includes(new Date(rushData.start_date).getMonth()) ? "Fall" : "Spring"} Rush Events</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">{new Date(rushData.start_date).getFullYear()} {[7, 8].includes(new Date(rushData.start_date).getMonth()) ? "Fall" : "Spring"} Rush Events</h2>
+            <p className="text-xl text-zbt-grey-600">
               Join us for a week of exciting events and get to know the ZBT brotherhood
             </p>
             
             {/* IFC Rules Message */}
             {shouldBlurContent && (
-              <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4 max-w-2xl mx-auto">
-                <p className="text-lg text-yellow-800 font-medium">
-                  As per IFC rules, this schedule will be made available at 8:00 AM on {new Date(rushData.start_date).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit' })}. Meet us at Kresge Kickoff for more info and enjoy Orientation and REX until then!
+              <div className="mt-6 bg-zbt-gold-50 border border-zbt-gold-200 rounded-2xl p-4 max-w-2xl mx-auto">
+                <p className="text-lg text-zbt-gold-800 font-medium">
+                  As per IFC rules, this schedule will be made available at 8:00 AM on {new Date(rushData.start_date).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit' })}. Meet us at Kresge Kickoff for more info!
                 </p>
               </div>
             )}
@@ -279,13 +282,13 @@ const Rush = () => {
           <div className={`mb-8 ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
             <div className="flex items-center justify-center space-x-4 mb-4">
               <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium text-gray-700">Filter by event type</span>
+                <span className="text-sm font-medium text-zbt-grey-700">Filter by event type</span>
               </div>
               
               {selectedTags.length > 0 && (
                 <button
                   onClick={clearAllFilters}
-                  className="flex items-center space-x-1 text-sm text-blue-600 hover:text-blue-800"
+                  className="flex items-center space-x-1 text-sm text-zbt-blue-600 hover:text-zbt-blue-800"
                 >
                   <X size={16} />
                   <span>Clear filters</span>
@@ -301,8 +304,8 @@ const Rush = () => {
                   onClick={() => toggleTag(tag)}
                   className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                     selectedTags.includes(tag)
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-zbt-blue-600 text-white'
+                      : 'bg-zbt-grey-100 text-zbt-grey-700 hover:bg-zbt-grey-200'
                   }`}
                 >
                   {tag.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
@@ -312,14 +315,14 @@ const Rush = () => {
           </div>
 
           {/* Phone Call Section - Above the rush events list */}
-          <div className={`mb-8 bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-2xl mx-auto ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
-            <p className="text-lg text-gray-700 mb-4 text-center">
-              Need a ride to an event? Call us at <span className="font-semibold text-blue-600">888-5444-ZBT</span> and we'll pick you up!
+          <div className={`mb-8 bg-zbt-blue-50 border border-zbt-blue-200 rounded-2xl p-6 max-w-2xl mx-auto ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
+            <p className="text-lg text-zbt-grey-700 mb-4 text-center">
+              Need a ride to an event? Call us at <span className="font-semibold text-zbt-blue-600">888-5444-ZBT</span> and we'll pick you up!
             </p>
             <div className="text-center">
               <a
                 href="tel:888-544-4428"
-                className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center bg-zbt-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-700 transition-colors shadow-elegant"
               >
                 Call 888-544-4428
               </a>
@@ -330,7 +333,7 @@ const Rush = () => {
             {/* Current and Upcoming Events by Day */}
             {Object.keys(eventsByDay).length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-gray-500">No events match the selected filters.</p>
+                <p className="text-zbt-grey-500">No events match the selected filters.</p>
               </div>
             ) : (
               <div className="space-y-6">
@@ -341,21 +344,21 @@ const Rush = () => {
                   if (activeEvents.length === 0) return null
                   
                   return (
-                    <div key={day} className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-                      <div className="bg-blue-600 text-white px-6 py-4">
-                        <h3 className="text-xl font-semibold">{formatDate(day)}</h3>
+                    <div key={day} className="bg-white rounded-2xl shadow-soft border border-zbt-grey-300 hover:shadow-homey transition-shadow duration-300">
+                      <div className="border-b border-zbt-grey-200 px-6 py-4">
+                        <h3 className="text-xl font-semibold font-sans text-zbt-grey-900">{formatDate(day)}</h3>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
                           {activeEvents.map((event, eventIndex) => {
                             const status = getEventStatus(event)
                             return (
-                              <div key={eventIndex} className="border-l-2 border-blue-200 pl-4">
+                              <div key={eventIndex} className="border-l-2 border-zbt-blue-200 pl-4">
                                 <div className="flex items-start justify-between">
                                   <div className="flex-1">
                                     <div className="flex items-center space-x-2 mb-2">
-                                      <span className="text-sm font-medium text-blue-600">{event.time}</span>
-                                      <h4 className="font-semibold text-gray-900">{event.name}</h4>
+                                      <span className="text-sm font-medium text-zbt-blue-600">{event.time}</span>
+                                      <h4 className="font-semibold text-zbt-grey-900 font-sans">{event.name}</h4>
                                       
                                       {/* Status Badges - only for now and upcoming */}
                                       {status === 'now' && (
@@ -364,17 +367,19 @@ const Rush = () => {
                                         </span>
                                       )}
                                       {status === 'upcoming' && (
-                                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                                          UPCOMING
+                                        <span className="bg-zbt-blue-100 text-zbt-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                                          LATER TODAY!
                                         </span>
                                       )}
                                     </div>
                                     
-                                    <p className="text-sm mb-2 text-gray-600">{event.description}</p>
+                                    <p className="text-sm mb-2 text-zbt-grey-600">{event.description}</p>
                                     
                                     <div className="flex items-center space-x-1 mb-2">
-                                      <MapPin size={14} className="text-gray-400" />
-                                      <span className="text-sm text-gray-600">{event.location}</span>
+                                      <MapPin size={14} className="text-zbt-grey-400" />
+                                      <span className={`text-sm text-zbt-grey-600 ${isInviteOnly(event) ? 'blur-sm select-none' : ''}`}>
+                                        {getObfuscatedLocation(event)}
+                                      </span>
                                     </div>
                                     
                                     <div className="flex flex-wrap gap-1">
@@ -406,39 +411,57 @@ const Rush = () => {
               
               if (allPastEvents.length === 0) return null
               
+              // Group past events by date
+              const pastEventsByDate = allPastEvents.reduce((acc, event) => {
+                const date = event.date
+                if (!acc[date]) {
+                  acc[date] = []
+                }
+                acc[date].push(event)
+                return acc
+              }, {} as Record<string, typeof allPastEvents>)
+              
               return (
                 <div className={shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}>
-                  <h3 className="text-2xl font-bold text-gray-500 mb-4">Past Events</h3>
-                  <div className="space-y-4">
-                    {allPastEvents.map((event, eventIndex) => (
-                      <div key={`past-${eventIndex}`} className="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-60">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <div className="flex items-center space-x-2 mb-2">
-                              <span className="text-sm font-medium text-gray-500">{event.time}</span>
-                              <h4 className="font-semibold text-gray-500">{event.name}</h4>
+                  <h3 className="text-2xl font-bold text-zbt-grey-500 mb-6 font-sans">Past Events</h3>
+                  <div className="space-y-6">
+                    {Object.entries(pastEventsByDate).map(([date, events]) => (
+                      <div key={date} className="bg-white border border-zbt-grey-200 rounded-xl shadow-soft p-6 opacity-70">
+                        <div className="border-b border-zbt-grey-200 pb-3 mb-4">
+                          <h4 className="text-lg font-semibold text-zbt-grey-700 font-sans">{formatDate(date)}</h4>
+                        </div>
+                        <div className="space-y-3">
+                          {events.map((event, eventIndex) => (
+                            <div key={`past-${date}-${eventIndex}`} className="flex items-start space-x-3 py-2">
+                              <div className="text-sm font-medium text-zbt-grey-500 min-w-[60px]">
+                                {event.time}
+                              </div>
+                              <div className="flex-1">
+                                <h5 className="font-semibold text-zbt-grey-600 font-sans mb-1">{event.name}</h5>
+                                <p className="text-zbt-grey-500 text-sm mb-2">{event.description}</p>
+                                <div className="flex items-center space-x-3 text-xs text-zbt-grey-400">
+                                  <div className="flex items-center space-x-1">
+                                    <MapPin size={12} />
+                                    <span className={isInviteOnly(event) ? 'blur-sm select-none' : ''}>
+                                      {getObfuscatedLocation(event)}
+                                    </span>
+                                  </div>
+                                  {event.tags && event.tags.length > 0 && (
+                                    <div className="flex gap-1">
+                                      {event.tags.map((tag, tagIndex) => (
+                                        <span 
+                                          key={tagIndex} 
+                                          className="bg-zbt-grey-100 text-zbt-grey-500 px-2 py-0.5 rounded-full"
+                                        >
+                                          {tag.replace('_', ' ')}
+                                        </span>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
                             </div>
-                            <div className="flex items-center space-x-2 mb-2">
-                              <span className="text-xs font-medium text-gray-400 bg-gray-200 px-2 py-1 rounded">
-                                {formatDate(event.date)}
-                              </span>
-                            </div>
-                            <p className="text-gray-500 text-sm mb-2">{event.description}</p>
-                            <div className="flex items-center space-x-1 mb-2">
-                              <MapPin size={14} className="text-gray-400" />
-                              <span className="text-sm text-gray-500">{event.location}</span>
-                            </div>
-                            <div className="flex flex-wrap gap-1">
-                              {event.tags.map((tag, tagIndex) => (
-                                <span
-                                  key={tagIndex}
-                                  className="px-2 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-600"
-                                >
-                                  {tag.replace('_', ' ')}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
+                          ))}
                         </div>
                       </div>
                     ))}
@@ -453,11 +476,11 @@ const Rush = () => {
       </section>
 
       {/* Rush Photos Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 section-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Rush Memories</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Rush Memories</h2>
+            <p className="text-xl text-zbt-grey-600">
               See what makes rush week so special at ZBT
             </p>
           </div>
@@ -493,9 +516,9 @@ const Rush = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 hero-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join the Brotherhood?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Ready to Join the Brotherhood?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Don't miss out on the opportunity to become part of the ZBT family. 
             Contact us to learn more about the rush process.
@@ -503,7 +526,7 @@ const Rush = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`mailto:${execContacts.rushChair}`}
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
             >
               Contact Rush Chair
               <ArrowRight size={20} className="ml-2" />

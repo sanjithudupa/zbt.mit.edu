@@ -219,11 +219,11 @@ const Brothers = () => {
 
   const campusActivities = brothersData.campusActivities.map(activity => ({
     ...activity,
-    icon: activity.icon === 'Code' ? <Code size={20} className="text-blue-600" /> : 
-         activity.icon === 'Diamond' ? <Diamond size={20} className="text-green-600" /> :
-         activity.icon === 'Heart' ? <Heart size={20} className="text-red-600" /> :
-         activity.icon === 'Car' ? <Car size={20} className="text-orange-600" /> :
-         <TrendingUp size={20} className="text-purple-600" />
+    icon: activity.icon === 'Code' ? <Code size={20} className="text-zbt-blue-600" /> : 
+         activity.icon === 'Diamond' ? <Diamond size={20} className="text-zbt-gold-600" /> :
+         activity.icon === 'Heart' ? <Heart size={20} className="text-zbt-gold-600" /> :
+         activity.icon === 'Car' ? <Car size={20} className="text-zbt-gold-600" /> :
+         <TrendingUp size={20} className="text-zbt-blue-600" />
   }))
 
   // Helper function to format ZBT class name
@@ -243,16 +243,16 @@ const Brothers = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-white" style={{ backgroundImage: 'url(/images/hero/brothers.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/80 to-blue-700/80 backdrop-blur-sm"></div>
+      <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/brothers.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Brothers</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Brothers</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Meet the diverse and talented members of Zeta Beta Tau Xi Chapter, 
               representing a wide range of majors and backgrounds from across the globe.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
               <div className="flex items-center justify-center space-x-4 mb-4">
                 <Users size={24} />
                 <span className="text-lg font-semibold">40+ Active Brothers</span>
@@ -271,8 +271,8 @@ const Brothers = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Campus Involvement</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Campus Involvement</h2>
+            <p className="text-xl text-zbt-grey-600">
               Our brothers are actively involved in various MIT organizations and activities
             </p>
           </div>
@@ -284,18 +284,18 @@ const Brothers = () => {
                 href={activity.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-5 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition-shadow group"
+                className="card text-center hover:shadow-warm transition-shadow group"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mx-auto">
+                  <div className="w-10 h-10 bg-zbt-grey-100 rounded-xl flex items-center justify-center mx-auto">
                     {activity.icon}
                   </div>
                   {/* <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-600 transition-colors" /> */}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg font-semibold text-zbt-grey-900 mb-2 group-hover:text-zbt-blue-600 transition-colors font-sans">
                   {activity.name}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-zbt-grey-600 text-sm">
                   {activity.description}
                 </p>
               </a>
@@ -305,11 +305,11 @@ const Brothers = () => {
       </section>
 
       {/* All Brothers Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 section-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Active Brothers</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Active Brothers</h2>
+            <p className="text-xl text-zbt-grey-600 mb-8">
               Get to know the brotherhood
             </p>
             
@@ -319,10 +319,10 @@ const Brothers = () => {
                 <button
                   key={zbtClass}
                   onClick={() => setSelectedZbtClass(zbtClass)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                  className={`px-4 py-2 rounded-xl font-medium transition-colors ${
                     selectedZbtClass === zbtClass
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                      ? 'bg-zbt-blue-600 text-white'
+                      : 'bg-zbt-grey-200 text-zbt-grey-700 hover:bg-zbt-grey-300'
                   }`}
                 >
                   {formatZbtClassName(zbtClass)}
@@ -335,18 +335,18 @@ const Brothers = () => {
             {filteredBrothers.map((brother) => (
               <div 
                 key={brother.id} 
-                className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow cursor-pointer w-full max-w-sm"
+                className="bg-cream-50 rounded-2xl shadow-soft border border-cream-200 overflow-hidden hover:shadow-warm transition-shadow cursor-pointer w-full max-w-sm"
                 onClick={() => {
                   setSelectedBrother(brother)
                   window.location.hash = brother.id
                 }}
               >
-                <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden relative">
+                <div className="h-48 bg-cream-200 flex items-center justify-center overflow-hidden relative">
                   {brother.imageExists && !brother.imageError ? (
                     <>
                       {brother.imageLoading && (
-                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                        <div className="absolute inset-0 flex items-center justify-center bg-cream-100">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-warm-600"></div>
                         </div>
                       )}
                       <img 
@@ -359,7 +359,7 @@ const Brothers = () => {
                       />
                     </>
                   ) : (
-                    <div className="text-gray-500 text-center">
+                    <div className="text-zbt-grey-500 text-center">
                       <div className="text-3xl mb-2">👤</div>
                       <div className="text-sm font-medium">{brother.name}</div>
                     </div>
@@ -367,15 +367,15 @@ const Brothers = () => {
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">{formatZbtClassName(brother.zbt_class)}</span>
+                    <span className="text-sm text-zbt-grey-500">{formatZbtClassName(brother.zbt_class)}</span>
                     {brother.role && (
-                      <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
+                      <span className="px-2 py-1 bg-zbt-gold-100 text-zbt-gold-800 rounded-full text-xs font-medium">
                         {capitalizeRole(brother.role)}
                       </span>
                     )}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{brother.name}</h3>
-                  <p className="text-gray-600 text-sm">Class of {brother.graduating_class}</p>
+                  <h3 className="text-lg font-semibold text-zbt-grey-900 mb-1 font-sans">{brother.name}</h3>
+                  <p className="text-zbt-grey-600 text-sm">Class of {brother.graduating_class}</p>
                 </div>
               </div>
             ))}
@@ -403,10 +403,10 @@ const Brothers = () => {
       {/* Brother Modal */}
       {selectedBrother && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-elegant">
             <div className="p-6">
               <div className="flex justify-between items-start mb-6">
-                <h2 className="text-3xl font-bold text-gray-900">{selectedBrother.name}</h2>
+                <h2 className="text-3xl font-bold text-zbt-grey-900 font-sans">{selectedBrother.name}</h2>
                 <button
                   onClick={() => {
                     // Temporarily disable scroll restoration
@@ -423,7 +423,7 @@ const Brothers = () => {
                     
                     setSelectedBrother(null)
                   }}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-zbt-grey-400 hover:text-zbt-grey-600"
                 >
                   <X size={24} />
                 </button>
@@ -431,7 +431,7 @@ const Brothers = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left side - Full height image */}
-                <div className="h-96 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <div className="h-96 bg-zbt-grey-200 rounded-lg flex items-center justify-center overflow-hidden">
                   {selectedBrother.imageExists && !selectedBrother.imageError ? (
                     <img 
                       src={selectedBrother.imageUrl} 
@@ -440,7 +440,7 @@ const Brothers = () => {
                       style={{ objectPosition: 'center 20%' }}
                     />
                   ) : (
-                    <div className="text-gray-500 text-center">
+                    <div className="text-zbt-grey-500 text-center">
                       <div className="text-6xl mb-4">👤</div>
                       <div className="text-lg font-medium">{selectedBrother.name}</div>
                     </div>
@@ -452,31 +452,31 @@ const Brothers = () => {
                   {/* Basic info at the top */}
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-3">
-                      <GraduationCap size={20} className="text-gray-400" />
-                      <span className="text-gray-700 font-medium">Class of {selectedBrother.graduating_class}</span>
+                      <GraduationCap size={20} className="text-zbt-grey-400" />
+                      <span className="text-zbt-grey-700 font-medium">Class of {selectedBrother.graduating_class}</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <MapPin size={20} className="text-gray-400" />
-                      <span className="text-gray-700 font-medium">{formatZbtClassName(selectedBrother.zbt_class)}</span>
+                      <MapPin size={20} className="text-zbt-grey-400" />
+                      <span className="text-zbt-grey-700 font-medium">{formatZbtClassName(selectedBrother.zbt_class)}</span>
                     </div>
                     {selectedBrother.role && (
                       <div className="flex items-center space-x-3">
-                        <Award size={20} className="text-gray-400" />
-                        <span className="text-gray-700 font-medium">{capitalizeRole(selectedBrother.role)}</span>
+                        <Award size={20} className="text-zbt-grey-400" />
+                        <span className="text-zbt-grey-700 font-medium">{capitalizeRole(selectedBrother.role)}</span>
                       </div>
                     )}
                   </div>
                   
                   {/* About Me at the bottom */}
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-3 text-lg">About Me</h3>
-                    <p className="text-gray-600 leading-relaxed">{selectedBrother.bio}</p>
+                    <h3 className="font-semibold text-zbt-grey-900 mb-3 text-lg font-sans">About Me</h3>
+                    <p className="text-zbt-grey-600 leading-relaxed">{selectedBrother.bio}</p>
                   </div>
                 </div>
               </div>
               
               {/* Navigation buttons */}
-              <div className="flex justify-between items-center mt-6 pt-6 border-t border-gray-200">
+              <div className="flex justify-between items-center mt-6 pt-6 border-t border-zbt-grey-200">
                 {/* Left side - Big button */}
                 <div className="flex-1 flex justify-start">
                   {selectedBrother.big && (() => {
@@ -484,9 +484,9 @@ const Brothers = () => {
                     return big ? (
                       <button
                         onClick={() => navigateToBrother(selectedBrother.big)}
-                        className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                        className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
                       >
-                        <span className="text-gray-400">←</span>
+                        <span className="text-zbt-grey-400">←</span>
                         <span>Big ({big.name})</span>
                       </button>
                     ) : null
@@ -502,25 +502,25 @@ const Brothers = () => {
                         return little ? (
                           <button
                                                       onClick={() => navigateToBrother(selectedBrother.littles[0])}
-                            className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                            className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
                           >
                             <span>Little ({little.name})</span>
-                            <span className="text-gray-400">→</span>
+                            <span className="text-zbt-grey-400">→</span>
                           </button>
                         ) : null
                       })() : (
                         <button
                           onClick={() => setShowLittlesTooltip(!showLittlesTooltip)}
-                          className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+                          className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
                         >
                           <span>Little (multiple)</span>
-                          <span className="text-gray-400">→</span>
+                          <span className="text-zbt-grey-400">→</span>
                         </button>
                       )}
                       
                       {/* Tooltip for multiple littles */}
                       {showLittlesTooltip && selectedBrother.littles.length > 1 && (
-                        <div className="absolute bottom-full right-0 mb-2 bg-white border border-gray-200 rounded-lg shadow-lg p-2 min-w-32 z-10">
+                        <div className="absolute bottom-full right-0 mb-2 bg-white border border-zbt-grey-200 rounded-lg shadow-lg p-2 min-w-32 z-10">
                           {selectedBrother.littles.map((littleId) => {
                             const little = brothersWithImages.find(b => b.id === littleId)
                             return little ? (
@@ -530,7 +530,7 @@ const Brothers = () => {
                                 navigateToBrother(littleId)
                                 setShowLittlesTooltip(false)
                               }}
-                                className="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
+                                className="block w-full text-left px-3 py-2 text-sm text-zbt-grey-700 hover:bg-zbt-grey-100 rounded transition-colors"
                               >
                                 {little.name}
                               </button>
@@ -548,9 +548,9 @@ const Brothers = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 hero-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join The Brotherhood</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Join The Brotherhood</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Become part of our diverse and accomplished brotherhood. 
             Rush ZBT and discover lifelong friendships and opportunities.
@@ -558,13 +558,13 @@ const Brothers = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/rush"
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
             >
               Rush ZBT
             </a>
             <a
               href={`mailto:${execContacts.president}`}
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center"
+              className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-grey-900 transition-colors inline-flex items-center justify-center shadow-elegant"
             >
               Contact President
             </a>

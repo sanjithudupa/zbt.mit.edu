@@ -5,11 +5,11 @@ const Events = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-white" style={{ backgroundImage: 'url(/images/hero/events.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/80 to-blue-700/80 backdrop-blur-sm"></div>
+      <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/events.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Events</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Events</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               If you are a freshman or a sophomore looking to rush ZBT, make sure to look at the rush page for fall events and activities.
             </p>
@@ -135,11 +135,11 @@ const Events = () => {
       </section> */}
 
       {/* Photo Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 section-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Highlights</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Highlights</h2>
+            <p className="text-xl text-zbt-grey-600">
               We host a variety of events throughout the year, including traditional parties, intimate formals and soirees, and philanthropy events like our annual Brookline Haunted House and Get On The Ball.
             </p>
           </div>
@@ -172,9 +172,9 @@ const Events = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 hero-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Come Be Part of Our Next Event!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Come Be Part of Our Next Event!</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Whether you're a current student wanting to experience the ZBT community, or another organization looking to hold a joint event,
             we welcome you to ZBT.
@@ -182,7 +182,7 @@ const Events = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`mailto:${execContacts.socialChair}`}
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
             >
               Contact Social Chair
             </a>

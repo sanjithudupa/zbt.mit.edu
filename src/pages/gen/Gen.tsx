@@ -17,7 +17,7 @@ export const Genealogy = () => {
            separation={{ siblings: 1, nonSiblings: 1.25 }} // Improve spacing
         />
       </div>
-      <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-md font-bold">
+      <div className="absolute top-4 right-4 bg-zbt-gold-600 text-white px-3 py-1 rounded-md font-bold">
         UNDER CONSTRUCTION
       </div>
     </div>

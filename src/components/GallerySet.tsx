@@ -60,8 +60,8 @@ const GallerySet = ({
     <div className={className}>
       {(title || description) && (
         <div className="text-center mb-8">
-          {title && <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>}
-          {description && <p className="text-gray-600">{description}</p>}
+          {title && <h3 className="text-2xl font-bold text-zbt-grey-900 mb-2 font-sans">{title}</h3>}
+          {description && <p className="text-zbt-grey-600">{description}</p>}
         </div>
       )}
 
@@ -69,11 +69,11 @@ const GallerySet = ({
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="bg-gray-200 rounded-lg overflow-hidden h-48 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+            className="bg-zbt-grey-200 rounded-lg overflow-hidden h-48 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => openImage(index)}
           >
             {image.placeholder ? (
-              <div className="text-gray-500 text-center">
+              <div className="text-zbt-grey-500 text-center">
                 <div className="text-3xl mb-2">{image.placeholderIcon || "📸"}</div>
                 <div>{image.placeholder}</div>
               </div>
@@ -99,7 +99,7 @@ const GallerySet = ({
           <div className="relative max-w-4xl max-h-full p-4">
             <button
               onClick={closeImage}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+              className="absolute top-4 right-4 text-white hover:text-zbt-grey-300 z-10"
             >
               <X size={32} />
             </button>
@@ -111,7 +111,7 @@ const GallerySet = ({
                     e.stopPropagation()
                     prevImage()
                   }}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-zbt-grey-300 z-10"
                 >
                   <ChevronLeft size={32} />
                 </button>
@@ -121,7 +121,7 @@ const GallerySet = ({
                     e.stopPropagation()
                     nextImage()
                   }}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-zbt-grey-300 z-10"
                 >
                   <ChevronRight size={32} />
                 </button>

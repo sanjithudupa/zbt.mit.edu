@@ -6,13 +6,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
-  color: #1f2937;
+  background-color: #f9fafb;
+  color: #111827;
 }
 
 @layer base {
@@ -21,26 +21,55 @@ body {
   }
   
   body {
-    @apply bg-white text-gray-900;
+    @apply bg-zbt-grey-50 text-zbt-grey-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans text-zbt-grey-900;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center;
+    @apply bg-zbt-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center shadow-elegant;
   }
   
   .btn-secondary {
-    @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors inline-flex items-center justify-center;
+    @apply border-2 border-zbt-blue-600 text-zbt-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center shadow-elegant;
   }
   
   .btn-outline {
-    @apply border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center;
+    @apply border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-blue-900 transition-colors inline-flex items-center justify-center shadow-elegant;
+  }
+
+  .card {
+    @apply bg-white border border-zbt-grey-200 rounded-2xl shadow-homey p-6;
+  }
+
+  .section-bg {
+    @apply bg-zbt-grey-100;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-zbt-blue-900/90 via-zbt-blue-800/90 to-zbt-blue-700/90;
+  }
+
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section h3,
+  .hero-section h4,
+  .hero-section h5,
+  .hero-section h6 {
+    @apply text-white;
+  }
+
+  .elegant-card {
+    @apply bg-white border border-zbt-grey-200 rounded-2xl shadow-elegant p-6 hover:shadow-homey transition-shadow duration-300;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-zbt-blue-600 to-zbt-gold-500 bg-clip-text text-transparent;
   }
 }
