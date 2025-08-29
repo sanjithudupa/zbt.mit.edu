@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { Calendar, MapPin, Users, ArrowRight, Star, X } from 'lucide-react'
+import { Calendar, MapPin, ArrowRight, X } from 'lucide-react'
 import rushData from '../data/rushData.json'
 import execContacts from '../data/execContacts.json'
 import ClickableImage from '../components/ClickableImage'
@@ -15,13 +15,13 @@ const Rush = () => {
   const shouldBlurContent = useMemo(() => {
     // Parse rush start date from "08/30" format
     const [month, day] = rushData.start_date.split('/').map(num => parseInt(num))
-    const rushStartDate = new Date(2025, month - 1, day)
+    const rushStartDate = new Date(2025, month - 1, day - 1) // -1 to let it open the previous day
     
     // Use current date directly (no timezone conversion)
     const currentDateLocal = new Date(currentDate)
     
     // Check if current date is before rush start date
-    const isBeforeRushStart = currentDateLocal < rushStartDate
+    const isBeforeRushStart = currentDateLocal < rushStartDate 
     
     // Check if it's the same day as rush start and before 8am
     const isRushStartDay = currentDateLocal.getDate() === rushStartDate.getDate() && 
@@ -268,7 +268,7 @@ const Rush = () => {
             {shouldBlurContent && (
               <div className="mt-6 bg-zbt-gold-50 border border-zbt-gold-200 rounded-2xl p-4 max-w-2xl mx-auto">
                 <p className="text-lg text-zbt-gold-800 font-medium">
-                  As per IFC rules, this schedule will be made available at 8:00 AM on {new Date(rushData.start_date).toLocaleDateString('en-US', { month: '2-digit', day: '2-digit' })}. Meet us at Kresge Kickoff for more info!
+                  As per IFC rules, this schedule will be made available at 8:00 AM on the day before rush starts. Meet us at Kresge Kickoff for more info!
                 </p>
               </div>
             )}

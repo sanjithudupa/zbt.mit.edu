@@ -3,6 +3,14 @@
 	"end_date": "09/04/2025",
 	"events": [
 		{
+			"name": "Kresge Kickoff",
+			"date": "08/30",
+			"time": "8:00 AM - 10:00 AM",
+			"description": "Come visit us on Kresge for IFC's rush kickoff event! Meet some of the brothers and learn about our events",
+			"location": "Kresge Oval",
+			"tags": []
+		},
+		{
 			"name": "Raising Canes and Outdoor Games",
 			"date": "08/30",
 			"time": "1:00 PM - 4:00 PM",
@@ -83,20 +91,12 @@
 			"tags": ["excursion", "invite_only"]
 		},
 		{
-			"name": "Sunset Kayaking",
+			"name": "Top Golf",
 			"date": "09/02",
-			"time": "5:00 PM - 7:00 PM",
-			"description": "Grab a paddle and row around with the brothers of ZBT!",
-			"location": "Paddle Boston",
+			"time": "5:00 PM - 8:00 PM",
+			"description": "Come join us at Topgolf with ZBT for a night of swings, snacks, and friendly competition!",
+			"location": "Top Golf Canton",
 			"tags": ["excursion", "invite_only"]
-		},
-		{
-			"name": "Mediterranean Dinner",
-			"date": "09/02",
-			"time": "7:30 PM - 10:00 PM",
-			"description": "Join ZBT for a chill night of Mediterranean eats and good company!",
-			"location": "ZBT House",
-			"tags": ["food", "invite_only"]
 		},
 		{
 			"name": "Winner Winner [Korean Fried] Chicken Dinner",
