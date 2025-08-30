@@ -64,28 +64,7 @@ const History = () => {
     }
   ]
 
-  const achievements = [
-    {
-      title: 'Academic Excellence',
-      description: 'Consistently achieving top honors in academics among all MIT FSILGs',
-      icon: <BookOpen size={24} className="text-zbt-blue-600" />
-    },
-    {
-      title: 'Athletic Success',
-      description: 'Excelling in intramural sports and campus athletics',
-      icon: <Trophy size={24} className="text-zbt-gold-600" />
-    },
-    {
-      title: 'Campus Leadership',
-      description: 'Decades of service to the MIT community',
-      icon: <Users size={24} className="text-zbt-blue-600" />
-    },
-    {
-      title: 'Strong Brotherhood',
-      description: 'Maintaining an unmatched level of excellence in brotherhood and community',
-      icon: <Star size={24} className="text-zbt-gold-600" />
-    }
-  ]
+
 
 
 
@@ -93,7 +72,7 @@ const History = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/history.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Our History</h1>
@@ -105,38 +84,13 @@ const History = () => {
         </div>
       </section>
 
-      {/* Achievements Section */}
-      <section className="py-16 section-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Our Legacy of Achievement</h2>
-            <p className="text-xl text-zbt-grey-600">
-              The values and accomplishments that define our chapter
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="elegant-card text-center">
-                <div className="w-12 h-12 bg-zbt-grey-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  {achievement.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-zbt-grey-900 mb-2 font-sans">{achievement.title}</h3>
-                <p className="text-zbt-grey-600 text-sm">{achievement.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Historical Resources Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Historical Resources</h2>
-            <p className="text-xl text-zbt-grey-600">
-              We pride ourselves on our history and our brotherhood.
-            </p>
           </div>
 
           <div className="max-w-2xl mx-auto text-center">
@@ -146,7 +100,7 @@ const History = () => {
             </p>
             <a
               href="/alumni#alumni-tools"
-              className="inline-block bg-zbt-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-zbt-blue-700 transition-colors shadow-elegant"
+              className="inline-block bg-zbt-blue-600 text-white px-8 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors"
             >
               View Historical Resources
             </a>
@@ -176,7 +130,7 @@ const History = () => {
                   
                   {/* Content - full width on mobile, alternating sides on md+ */}
                   <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
-                    <div className="elegant-card relative z-20">
+                    <div className="card relative z-20">
                       <div className="flex items-center space-x-3 mb-3">
                         {event.icon}
                         <span className="text-2xl font-bold text-zbt-blue-600">{event.year}</span>
@@ -193,23 +147,26 @@ const History = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 hero-gradient text-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Become Part of Our History</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <div className="max-w-lg mx-auto mb-12">
+            <hr className="border-zbt-grey-300" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-black">Become Part of Our History</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto text-zbt-grey-700">
             Join the next generation of ZBT brothers and help us continue our century-long 
             tradition of excellence, brotherhood, and service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/rush"
-              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="bg-zbt-blue-600 text-white px-8 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center"
             >
               Rush ZBT
             </a>
             <a
               href="/alumni#tools"
-              className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-grey-900 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-8 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center"
             >
               Connect with Alumni
             </a>

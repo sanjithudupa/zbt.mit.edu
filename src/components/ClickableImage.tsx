@@ -39,7 +39,7 @@ const ClickableImage = ({
         onClick={openImage}
       >
         {placeholder ? (
-          <div className="bg-gray-200 rounded-lg overflow-hidden h-full flex items-center justify-center">
+          <div className="bg-gray-200 overflow-hidden h-full flex items-center justify-center">
             <div className="text-gray-500 text-center p-4">
               <div className="text-3xl mb-2">{placeholderIcon}</div>
               <div>{placeholder}</div>
@@ -49,7 +49,7 @@ const ClickableImage = ({
           <img
             src={src}
             alt={alt}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover"
           />
         )}
       </div>

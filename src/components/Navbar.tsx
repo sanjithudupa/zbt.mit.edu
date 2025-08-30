@@ -20,16 +20,12 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path
 
   return (
-    <nav className="bg-white shadow-elegant sticky top-0 z-50 border-b border-zbt-grey-200">
+    <nav className="bg-white sticky top-0 z-50 border-b border-zbt-grey-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center">
             <img src={zbtCrest} alt="ZBT Crest" className="w-12 h-12" />
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-zbt-grey-900 font-sans">Zeta Beta Tau</h1>
-              <p className="text-sm text-zbt-grey-600">Xi Chapter • MIT</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,9 +34,9 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-xl text-sm font-medium transition-colors duration-200 ${
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-zbt-blue-700 bg-zbt-blue-50 border border-zbt-blue-200'
+                    ? 'text-zbt-blue-700 border border-zbt-blue-200'
                     : 'text-zbt-grey-700 hover:text-zbt-blue-700 hover:bg-zbt-blue-50'
                 }`}
               >
@@ -68,9 +64,9 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-3 py-2 rounded-xl text-base font-medium transition-colors duration-200 ${
+                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? 'text-zbt-blue-700 bg-zbt-blue-50 border border-zbt-blue-200'
+                      ? 'text-zbt-blue-700 border border-zbt-blue-200'
                       : 'text-zbt-grey-700 hover:text-zbt-blue-700 hover:bg-zbt-blue-50'
                   }`}
                   onClick={() => setIsOpen(false)}

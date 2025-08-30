@@ -6,7 +6,7 @@ const Events = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/events.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Events</h1>
@@ -28,7 +28,7 @@ const Events = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-8  border border-gray-200">
               <div className="flex items-center space-x-3 mb-4">
                 <Users size={24} className="text-blue-600" />
                 <span className="text-lg font-semibold text-gray-900">Social Events & Parties</span>
@@ -55,7 +55,7 @@ const Events = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6  border border-gray-200">
               <div className="flex items-center space-x-3 mb-4">
                 <Calendar size={20} className="text-blue-600" />
                 <span className="text-sm font-medium text-gray-500">Semi-Annual</span>
@@ -66,7 +66,7 @@ const Events = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6  border border-gray-200">
               <div className="flex items-center space-x-3 mb-4">
                 <Music size={20} className="text-blue-600" />
                 <span className="text-sm font-medium text-gray-500">Invite-Only</span>
@@ -91,11 +91,11 @@ const Events = () => {
           </div>
 
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-8  border border-gray-200 text-center">
+              <div className="w-16 h-16 bg-orange-100  flex items-center justify-center mx-auto mb-4">
                 <Utensils size={24} className="text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality Dining Experience</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">House Dinners</h3>
               <p className="text-lg text-gray-700 mb-6">
                 Let us delight you with a great company and a high quality dinner. Research has shown that dinners of ribs and teriyaki salmon improve friendships and strengthen bonds by 50%.
               </p>
@@ -115,7 +115,7 @@ const Events = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-8  border border-gray-200">
               <div className="flex items-center space-x-3 mb-4">
                 <Gift size={24} className="text-green-600" />
                 <span className="text-lg font-semibold text-gray-900">Annual Philanthropy Event</span>
@@ -135,7 +135,7 @@ const Events = () => {
       </section> */}
 
       {/* Photo Gallery Section */}
-      <section className="py-16 section-bg">
+      <section className="py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Highlights</h2>
@@ -172,9 +172,12 @@ const Events = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 hero-gradient text-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Come Be Part of Our Next Event!</h2>
+          <div className="max-w-lg mx-auto mb-12">
+            <hr className="border-zbt-grey-300" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-black">Come Be Part of Our Next Event!</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Whether you're a current student wanting to experience the ZBT community, or another organization looking to hold a joint event,
             we welcome you to ZBT.
@@ -182,7 +185,7 @@ const Events = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`mailto:${execContacts.socialChair}`}
-              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-8 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center"
             >
               Contact Social Chair
             </a>

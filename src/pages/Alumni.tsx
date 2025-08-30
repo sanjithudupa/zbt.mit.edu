@@ -1,4 +1,4 @@
-import { Mail, Users, GraduationCap, Heart } from 'lucide-react'
+import { GraduationCap } from 'lucide-react'
 import execContacts from '../data/execContacts.json'
 
 const Alumni = () => {
@@ -6,22 +6,13 @@ const Alumni = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/alumni.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Alumni</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Once you move beyond your undergrad experience as a zebe, the bonds of brotherhood remain just as strong as ever.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
-              <div className="flex items-center justify-center space-x-4 mb-4">
-                <Users size={24} />
-                <span className="text-lg font-semibold">Lifelong Brotherhood</span>
-              </div>
-              <p className="text-lg">
-                While our lives and careers lead us to a variety of locations and situations, MIT ZBT continues to thrive and continue the excellence that we were all a part of.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -98,13 +89,11 @@ const Alumni = () => {
       </section>
 
       {/* Awards Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Recognition & Awards</h2>
-            <p className="text-xl text-zbt-grey-600">
-              MIT ZBT is proud to receive recognition for our continued excellence
-            </p>
+
           </div>
 
           <div className="max-w-2xl mx-auto bg-zbt-blue-50 p-8 rounded-lg border border-zbt-blue-200">
@@ -171,52 +160,49 @@ const Alumni = () => {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-16 hero-gradient text-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Reconnect with Your Brothers</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <div className="max-w-lg mx-auto mb-12">
+            <hr className="border-zbt-grey-300" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-black">Reconnect with Your Brothers</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto text-zbt-grey-700">
             Whether you graduated last year or decades ago, there's always a place for you 
             in the ZBT brotherhood. Stay connected and continue the legacy.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-8">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center">
-              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Mail size={24} className="text-white" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 font-sans">Contact the Alumni Chair</h3>
-              <p className="text-sm text-white/80 mb-4">
+            <div className="p-6 border border-zbt-grey-200 text-center">
+              <h3 className="text-lg font-semibold mb-2 font-sans text-black">Contact the Alumni Chair</h3>
+              <p className="text-sm text-zbt-grey-600 mb-4">
                 Stay updated with chapter news and alumni achievements.
               </p>
               <a
                 href={`mailto:${execContacts.alumniChair}`}
-                className="text-white hover:text-zbt-grey-200 font-medium"
+                className="text-zbt-blue-600 hover:text-zbt-blue-700 font-medium"
               >
                 Email →
               </a>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center">
-              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Heart size={24} className="text-white" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 font-sans">Support the Chapter</h3>
-              <p className="text-sm text-white/80 mb-4">
+            <div className="p-6 border border-zbt-grey-200 text-center">
+              <h3 className="text-lg font-semibold mb-2 font-sans text-black">Support the Chapter</h3>
+              <p className="text-sm text-zbt-grey-600 mb-4">
                 Contribute to house improvements and other chapter needs
               </p>
               <a
                 href="https://www.paypal.com/donate?token=TH3WnlG-utIpgvtKblBJfIZOSwD4iWTOdgVXBuaVCxq15CdAMxjIYFM5_yzZMl1PlF5bN6iEqsa39qdn"
-                className="text-white hover:text-zbt-grey-200 font-medium"
+                className="text-zbt-gold-600 hover:text-zbt-gold-700 font-medium"
               >
                 Donate →
               </a>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
               href="https://maps.app.goo.gl/wsGH25zVRsR6Fggx5"
-              className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-grey-900 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-8 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center"
             >
               Visit the House
             </a>

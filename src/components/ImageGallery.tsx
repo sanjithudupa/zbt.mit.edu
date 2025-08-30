@@ -50,7 +50,7 @@ const ImageGallery = ({ images, className = "" }: ImageGalleryProps) => {
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="bg-gray-200 rounded-lg overflow-hidden h-48 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+            className="bg-gray-200 overflow-hidden h-48 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => openImage(index)}
           >
             {image.placeholder ? (

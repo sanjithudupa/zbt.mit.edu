@@ -640,13 +640,19 @@
     {
       "name": "Asian Christian Fellowship",
       "description": "Inclusive Christian community for Asian students at MIT",
-      "link": "https://acf.mit.edu/",
+      "link": "http://acf.mit.edu/",
       "icon": "Heart"
     },
     {
       "name": "MIT Motorsports",
       "description": "MIT's motorsports team, building a Formula SAE car from scratch",
       "link": "https://fsae.mit.edu/",
+      "icon": "Car"
+    },
+    {
+      "name": "MIT Entrepreneurship Club",
+      "description": "A group of students passionate about entrepreneurship with opportunities to get real-world startup experience",
+      "link": "https://mec.mit.edu/",
       "icon": "Car"
     }
   ]

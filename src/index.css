@@ -31,27 +31,27 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-zbt-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center shadow-elegant;
+    @apply bg-zbt-blue-600 text-white px-6 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center;
   }
   
   .btn-secondary {
-    @apply border-2 border-zbt-blue-600 text-zbt-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center shadow-elegant;
+    @apply border-2 border-zbt-blue-600 text-zbt-blue-600 px-6 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center;
   }
   
   .btn-outline {
-    @apply border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-blue-900 transition-colors inline-flex items-center justify-center shadow-elegant;
+    @apply border-2 border-white text-white px-6 py-3 font-semibold hover:bg-white hover:text-zbt-blue-900 transition-colors inline-flex items-center justify-center;
   }
 
   .card {
-    @apply bg-white border border-zbt-grey-200 rounded-2xl shadow-homey p-6;
+    @apply border border-zbt-grey-200 p-6;
   }
 
   .section-bg {
-    @apply bg-zbt-grey-100;
+    @apply bg-zbt-grey-50;
   }
 
   .hero-gradient {
-    @apply bg-gradient-to-br from-zbt-blue-900/90 via-zbt-blue-800/90 to-zbt-blue-700/90;
+    @apply backdrop-blur-sm;
   }
 
   .hero-section h1,
@@ -64,7 +64,7 @@ body {
   }
 
   .elegant-card {
-    @apply bg-white border border-zbt-grey-200 rounded-2xl shadow-elegant p-6 hover:shadow-homey transition-shadow duration-300;
+    @apply border border-zbt-grey-200 p-6;
   }
 }
 

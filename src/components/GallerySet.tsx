@@ -65,11 +65,17 @@ const GallerySet = ({
         </div>
       )}
 
-      <div className={`grid ${gridCols} gap-6`}>
+      <div className="flex flex-wrap gap-6 justify-center">
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="bg-zbt-grey-200 rounded-lg overflow-hidden h-48 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+            className="bg-zbt-grey-200 overflow-hidden h-64 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
+            style={{ 
+              width: gridCols.includes('lg:grid-cols-3') ? 'calc(33.333% - 1rem)' : 
+                     gridCols.includes('md:grid-cols-2') ? 'calc(50% - 0.75rem)' : 
+                     'calc(25% - 1.125rem)',
+              minWidth: '250px'
+            }}
             onClick={() => openImage(index)}
           >
             {image.placeholder ? (

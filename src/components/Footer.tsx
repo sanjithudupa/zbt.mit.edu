@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-zbt-grey-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div>
             <h3 className="text-lg font-semibold mb-4 font-sans text-white">Contact Us</h3>
@@ -25,17 +25,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 font-sans text-white">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/rush" className="text-zbt-grey-300 hover:text-white transition-colors">Rush</a></li>
-              <li><a href="/events" className="text-zbt-grey-300 hover:text-white transition-colors">Events</a></li>
-              <li><a href="/brothers" className="text-zbt-grey-300 hover:text-white transition-colors">Brothers</a></li>
-              <li><a href="/alumni" className="text-zbt-grey-300 hover:text-white transition-colors">Alumni</a></li>
-            </ul>
-          </div>
-
           {/* About */}
           <div>
             <h3 className="text-lg font-semibold mb-4 font-sans text-white">About ZBT</h3>
@@ -44,7 +33,7 @@ const Footer = () => {
               fostering brotherhood, academic excellence, and community service.
             </p>
             <div className="flex space-x-4">
-              <div className="w-24 bg-transparent rounded-full flex items-center justify-center">
+              <div className="w-24 bg-transparent flex items-center justify-center">
                 <a href="https://zbt.org/"><img src={logo} alt="ZBT Logo" className="w-16 h-16" /></a>
               </div>
             </div>

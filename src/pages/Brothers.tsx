@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Users, Award, GraduationCap, MapPin, X, Code, Heart, TrendingUp, Diamond, Car } from 'lucide-react'
+import { Award, GraduationCap, MapPin, X } from 'lucide-react'
 import brothersData from '../data/brothersData.json'
-import execContacts from '../data/execContacts.json'
+
 
 interface Brother {
   id: string
@@ -219,11 +219,21 @@ const Brothers = () => {
 
   const campusActivities = brothersData.campusActivities.map(activity => ({
     ...activity,
-    icon: activity.icon === 'Code' ? <Code size={20} className="text-zbt-blue-600" /> : 
-         activity.icon === 'Diamond' ? <Diamond size={20} className="text-zbt-gold-600" /> :
-         activity.icon === 'Heart' ? <Heart size={20} className="text-zbt-gold-600" /> :
-         activity.icon === 'Car' ? <Car size={20} className="text-zbt-gold-600" /> :
-         <TrendingUp size={20} className="text-zbt-blue-600" />
+    icon: <img 
+      src={`https://www.google.com/s2/favicons?domain=${activity.link}&sz=32`} 
+      alt={`${activity.name} favicon`}
+      className="w-6 h-6"
+      onError={(e) => {
+        // Fallback to original icon if favicon fails
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        target.parentElement!.innerHTML = activity.icon === 'Code' ? '<svg width="20" height="20" fill="currentColor" class="text-zbt-blue-600"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>' : 
+                                                                    activity.icon === 'Diamond' ? '<svg width="20" height="20" fill="currentColor" class="text-zbt-gold-600"><path d="M6 3h12l4 6-10 12L2 9l4-6z"></path></svg>' :
+                                                                    activity.icon === 'Heart' ? '<svg width="20" height="20" fill="currentColor" class="text-zbt-gold-600"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>' :
+                                                                    activity.icon === 'Car' ? '<svg width="20" height="20" fill="currentColor" class="text-zbt-gold-600"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path></svg>' :
+                                                                    '<svg width="20" height="20" fill="currentColor" class="text-zbt-blue-600"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>';
+      }}
+    />
   }))
 
   // Helper function to format ZBT class name
@@ -244,7 +254,7 @@ const Brothers = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/brothers.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Brothers</h1>
@@ -252,47 +262,38 @@ const Brothers = () => {
               Meet the diverse and talented members of Zeta Beta Tau Xi Chapter, 
               representing a wide range of majors and backgrounds from across the globe.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
-              <div className="flex items-center justify-center space-x-4 mb-4">
-                <Users size={24} />
-                <span className="text-lg font-semibold">40+ Active Brothers</span>
-              </div>
-              <p className="text-lg">
-                From Computer Science to Aerospace Engineering, our brothers represent a wide spectrum 
-                of academic excellence at MIT.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
 
 
       {/* Campus Activities */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Campus Involvement</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-sans">Campus Involvement</h2>
             <p className="text-xl text-zbt-grey-600">
               Our brothers are actively involved in various MIT organizations and activities
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto justify-items-center">
             {campusActivities.map((activity, index) => (
               <a
                 key={index}
                 href={activity.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card text-center hover:shadow-warm transition-shadow group"
+                className="card text-center group w-full max-w-sm"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 bg-zbt-grey-100 rounded-xl flex items-center justify-center mx-auto">
+                  <div className="w-10 h-10 bg-zbt-grey-100 flex items-center justify-center mx-auto">
                     {activity.icon}
                   </div>
                   {/* <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-600 transition-colors" /> */}
                 </div>
-                <h3 className="text-lg font-semibold text-zbt-grey-900 mb-2 group-hover:text-zbt-blue-600 transition-colors font-sans">
+                <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-zbt-blue-600 transition-colors font-sans">
                   {activity.name}
                 </h3>
                 <p className="text-zbt-grey-600 text-sm">
@@ -305,13 +306,11 @@ const Brothers = () => {
       </section>
 
       {/* All Brothers Section */}
-      <section className="py-16 section-bg">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">Active Brothers</h2>
-            <p className="text-xl text-zbt-grey-600 mb-8">
-              Get to know the brotherhood
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-sans">Active Brothers</h2>
+
             
             {/* Filter */}
             <div className="flex justify-center space-x-4 mb-8">
@@ -319,10 +318,10 @@ const Brothers = () => {
                 <button
                   key={zbtClass}
                   onClick={() => setSelectedZbtClass(zbtClass)}
-                  className={`px-4 py-2 rounded-xl font-medium transition-colors ${
+                  className={`px-4 py-2  font-medium transition-colors ${
                     selectedZbtClass === zbtClass
                       ? 'bg-zbt-blue-600 text-white'
-                      : 'bg-zbt-grey-200 text-zbt-grey-700 hover:bg-zbt-grey-300'
+                      : 'bg-zbt-grey-200 text-black hover:bg-zbt-grey-300'
                   }`}
                 >
                   {formatZbtClassName(zbtClass)}
@@ -335,7 +334,7 @@ const Brothers = () => {
             {filteredBrothers.map((brother) => (
               <div 
                 key={brother.id} 
-                className="bg-cream-50 rounded-2xl shadow-soft border border-cream-200 overflow-hidden hover:shadow-warm transition-shadow cursor-pointer w-full max-w-sm"
+                className="bg-cream-50 border border-cream-200 overflow-hidden cursor-pointer w-full max-w-sm"
                 onClick={() => {
                   setSelectedBrother(brother)
                   window.location.hash = brother.id
@@ -374,7 +373,7 @@ const Brothers = () => {
                       </span>
                     )}
                   </div>
-                  <h3 className="text-lg font-semibold text-zbt-grey-900 mb-1 font-sans">{brother.name}</h3>
+                  <h3 className="text-lg font-semibold text-black mb-1 font-sans">{brother.name}</h3>
                   <p className="text-zbt-grey-600 text-sm">Class of {brother.graduating_class}</p>
                 </div>
               </div>
@@ -403,10 +402,10 @@ const Brothers = () => {
       {/* Brother Modal */}
       {selectedBrother && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-elegant">
+          <div className="bg-white max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-zbt-grey-200">
             <div className="p-6">
               <div className="flex justify-between items-start mb-6">
-                <h2 className="text-3xl font-bold text-zbt-grey-900 font-sans">{selectedBrother.name}</h2>
+                <h2 className="text-3xl font-bold text-black font-sans">{selectedBrother.name}</h2>
                 <button
                   onClick={() => {
                     // Temporarily disable scroll restoration
@@ -431,7 +430,7 @@ const Brothers = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left side - Full height image */}
-                <div className="h-96 bg-zbt-grey-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <div className="h-96 bg-zbt-grey-200  flex items-center justify-center overflow-hidden">
                   {selectedBrother.imageExists && !selectedBrother.imageError ? (
                     <img 
                       src={selectedBrother.imageUrl} 
@@ -469,7 +468,7 @@ const Brothers = () => {
                   
                   {/* About Me at the bottom */}
                   <div className="flex-1">
-                    <h3 className="font-semibold text-zbt-grey-900 mb-3 text-lg font-sans">About Me</h3>
+                    <h3 className="font-semibold text-black mb-3 text-lg font-sans">About Me</h3>
                     <p className="text-zbt-grey-600 leading-relaxed">{selectedBrother.bio}</p>
                   </div>
                 </div>
@@ -484,7 +483,7 @@ const Brothers = () => {
                     return big ? (
                       <button
                         onClick={() => navigateToBrother(selectedBrother.big)}
-                        className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
+                        className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100  transition-colors"
                       >
                         <span className="text-zbt-grey-400">←</span>
                         <span>Big ({big.name})</span>
@@ -502,7 +501,7 @@ const Brothers = () => {
                         return little ? (
                           <button
                                                       onClick={() => navigateToBrother(selectedBrother.littles[0])}
-                            className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
+                            className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100  transition-colors"
                           >
                             <span>Little ({little.name})</span>
                             <span className="text-zbt-grey-400">→</span>
@@ -511,7 +510,7 @@ const Brothers = () => {
                       })() : (
                         <button
                           onClick={() => setShowLittlesTooltip(!showLittlesTooltip)}
-                          className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100 rounded-lg transition-colors"
+                          className="flex items-center space-x-2 px-4 py-2 text-sm text-zbt-grey-600 hover:text-zbt-grey-800 hover:bg-zbt-grey-100  transition-colors"
                         >
                           <span>Little (multiple)</span>
                           <span className="text-zbt-grey-400">→</span>
@@ -520,7 +519,7 @@ const Brothers = () => {
                       
                       {/* Tooltip for multiple littles */}
                       {showLittlesTooltip && selectedBrother.littles.length > 1 && (
-                        <div className="absolute bottom-full right-0 mb-2 bg-white border border-zbt-grey-200 rounded-lg shadow-lg p-2 min-w-32 z-10">
+                        <div className="absolute bottom-full right-0 mb-2 bg-white border border-zbt-grey-200  shadow-lg p-2 min-w-32 z-10">
                           {selectedBrother.littles.map((littleId) => {
                             const little = brothersWithImages.find(b => b.id === littleId)
                             return little ? (
@@ -548,25 +547,22 @@ const Brothers = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 hero-gradient text-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Join The Brotherhood</h2>
+          <div className="max-w-lg mx-auto mb-12">
+            <hr className="border-zbt-grey-300" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-black">Join The Brotherhood</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Become part of our diverse and accomplished brotherhood. 
             Rush ZBT and discover lifelong friendships and opportunities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
               href="/rush"
-              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-8 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center"
             >
               Rush ZBT
-            </a>
-            <a
-              href={`mailto:${execContacts.president}`}
-              className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-zbt-grey-900 transition-colors inline-flex items-center justify-center shadow-elegant"
-            >
-              Contact President
             </a>
           </div>
         </div>

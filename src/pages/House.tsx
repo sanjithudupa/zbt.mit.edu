@@ -1,4 +1,4 @@
-import { MapPin, Wifi, Utensils, Car, Users, Star, Computer, Bike } from 'lucide-react'
+import { Utensils, Car, Users, Star, Computer } from 'lucide-react'
 import ClickableImage from '../components/ClickableImage'
 
 const House = () => {
@@ -39,7 +39,7 @@ const House = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative text-white" style={{ backgroundImage: 'url(/images/hero/house.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 hero-gradient backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-sans">Our House</h1>
@@ -47,22 +47,12 @@ const House = () => {
               ZBT has existed at MIT for over 100 years, and spent the last 50 of those 
               nestled away at our beautiful home in Brookline.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
-              <div className="flex items-center justify-center space-x-4 mb-4">
-                <MapPin size={24} />
-                <span className="text-lg font-semibold">58 Manchester Rd, Brookline, MA</span>
-              </div>
-              <p className="text-lg">
-                Our historic house provides a comfortable and welcoming environment 
-                for all brothers to live, study, and socialize.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
       {/* House Overview */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -73,20 +63,20 @@ const House = () => {
                 brotherhood bonding, and personal growth.
               </p>
               <p className="text-lg text-zbt-grey-600 mb-8">
-                With spacious common areas, modern amenities, and a van for transportation, 
-                our house offers everything brothers need to succeed both academically and socially.
+                With spacious common areas and a van for transportation, 
+                our house offers everything brothers need.
               </p>
               {/* <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="tel:+16175550123"
-                  className="bg-zbt-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center shadow-elegant"
+                  className="bg-zbt-blue-600 text-black px-6 py-3  font-semibold hover:bg-zbt-blue-700 transition-colors inline-flex items-center justify-center "
                 >
                   <Phone size={20} className="mr-2" />
                   Call Us
                 </a>
                 <a
                   href="mailto:house@zbt.mit.edu"
-                  className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center shadow-elegant"
+                  className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-6 py-3  font-semibold hover:bg-zbt-blue-600 hover:text-black transition-colors inline-flex items-center justify-center "
                 >
                   <Mail size={20} className="mr-2" />
                   Email Us
@@ -103,25 +93,21 @@ const House = () => {
       </section>
 
       {/* Amenities */}
-      <section className="py-16 section-bg">
+      <section className="py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-zbt-grey-900 mb-4 font-sans">House Amenities</h2>
-            <p className="text-xl text-zbt-grey-600">
-              Everything you need for comfortable living and academic success
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {amenities.map((amenity, index) => (
-              <div key={index} className="elegant-card">
-                <div className="w-12 h-12 bg-zbt-grey-100 rounded-xl flex items-center justify-center mb-4">
-                  {amenity.icon}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {amenities.map((amenity, index) => (
+                <div key={index} className="text-center">
+                  <h3 className="text-xl font-semibold text-zbt-grey-900 mb-3 font-sans">{amenity.title}</h3>
+                  <p className="text-zbt-grey-600 leading-relaxed">{amenity.description}</p>
                 </div>
-                <h3 className="text-lg font-semibold text-zbt-grey-900 mb-2 font-sans">{amenity.title}</h3>
-                <p className="text-zbt-grey-600">{amenity.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -144,7 +130,7 @@ const House = () => {
       </section> */}
 
        {/* Location */}
-       <section className="py-16 section-bg">
+       <section className="py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -154,25 +140,27 @@ const House = () => {
               </p>
               <div className="space-y-4">
                 <p className="text-lg text-zbt-grey-600 mb-6">There are several ways to get to and from the house and campus:</p>
-                <div className="flex items-center space-x-3">
-                  <Car size={20} className="text-zbt-gold-600" />
-                  <span className="text-zbt-grey-700">ZBT Van (5 times a day and during parties)</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin size={20} className="text-zbt-gold-600" />
-                  <span className="text-zbt-grey-700"><a className="text-zbt-blue-600" href="https://web.mit.edu/facilities/transportation/shuttles/safe_ride.html">MIT SafeRide</a> Cambridge West & Brookline Route</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Bike size={20} className="text-zbt-blue-600" />
-                  <span className="text-zbt-grey-700">BlueBike stations (several nearby)</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Wifi size={20} className="text-zbt-gold-600" />
-                  <span className="text-zbt-grey-700">Personal transportation</span>
-                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <span className="text-zbt-grey-400 mt-1">•</span>
+                    <span className="text-zbt-grey-700">ZBT Van (5 times a day and during parties)</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-zbt-grey-400 mt-1">•</span>
+                    <span className="text-zbt-grey-700"><a className="text-zbt-blue-600" href="https://web.mit.edu/facilities/transportation/shuttles/safe_ride.html">MIT SafeRide</a> Cambridge West & Brookline Route</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-zbt-grey-400 mt-1">•</span>
+                    <span className="text-zbt-grey-700">BlueBike stations (several nearby)</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-zbt-grey-400 mt-1">•</span>
+                    <span className="text-zbt-grey-700">Personal transportation</span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="h-96 rounded-lg overflow-hidden shadow-lg">
+            <div className="h-96  overflow-hidden ">
               <iframe
                 src="https://maps.google.com/maps?q=58+Manchester+Road+Brookline+Massachusetts&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
@@ -191,16 +179,19 @@ const House = () => {
 
 
       {/* CTA Section */}
-      <section className="py-16 hero-gradient text-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-white">Want to Live Here?</h2>
+          <div className="max-w-lg mx-auto mb-12">
+            <hr className="border-zbt-grey-300" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-sans text-black">Want to Live Here?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Come see our beautiful home in person during rush!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/rush"
-              className="bg-white text-zbt-grey-900 px-8 py-3 rounded-xl font-semibold hover:bg-zbt-grey-50 transition-colors inline-flex items-center justify-center shadow-elegant"
+              className="border-2 border-zbt-blue-600 text-zbt-blue-600 px-8 py-3 font-semibold hover:bg-zbt-blue-600 hover:text-white transition-colors inline-flex items-center justify-center"
             >
               Rush ZBT
             </a>
