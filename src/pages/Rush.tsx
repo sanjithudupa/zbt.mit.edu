@@ -83,7 +83,7 @@ const Rush = () => {
 
   const getTagColor = (tag: string) => {
     const colors: { [key: string]: string } = {
-      food: 'bg-zbt-gold-100 text-zbt-gold-800',
+      food: 'bg-orange-100 text-orange-800',
       excursion: 'bg-zbt-blue-100 text-zbt-blue-800',
       games: 'bg-zbt-grey-100 text-zbt-grey-700',
       invite_only: 'bg-green-100 text-green-800',
@@ -331,14 +331,14 @@ const Rush = () => {
             </div>
           </div>
 
-          <div className={`max-w-4xl mx-auto space-y-8 ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
+          <div className={`max-w-6xl mx-auto space-y-8 ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
             {/* Current and Upcoming Events by Day */}
             {Object.keys(eventsByDay).length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-zbt-grey-500">No events match the selected filters.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {Object.entries(eventsByDay).map(([day, events]) => {
                   // Filter out past events for the main display
                   const activeEvents = events.filter(event => getEventStatus(event) !== 'past')
@@ -351,29 +351,31 @@ const Rush = () => {
                         <h3 className="text-xl font-semibold font-sans text-zbt-grey-900">{formatDate(day)}</h3>
                       </div>
                       <div className="p-6">
-                        <div className="space-y-4">
+                        <div className="space-y-6">
                           {activeEvents.map((event, eventIndex) => {
                             const status = getEventStatus(event)
                             return (
                               <div key={eventIndex} className="border-l-2 border-zbt-blue-200 pl-4">
                                 <div className="flex items-start justify-between">
                                   <div className="flex-1">
-                                    <div className="flex items-center space-x-2 mb-2">
+                                    <div className="flex items-center justify-between mb-2">
                                       <span className="text-sm font-medium text-zbt-blue-600">{event.time}</span>
-                                      <h4 className="font-semibold text-zbt-grey-900 font-sans">{event.name}</h4>
                                       
                                       {/* Status Badges - only for now and upcoming */}
-                                      {status === 'now' && (
-                                        <span className="live-indicator bg-red-600 text-white px-2 py-1 text-xs font-medium">
-                                          NOW
-                                        </span>
-                                      )}
-                                      {status === 'upcoming' && (
-                                        <span className="bg-zbt-blue-100 text-zbt-blue-800 px-2 py-1 text-xs font-medium">
-                                          LATER TODAY!
-                                        </span>
-                                      )}
+                                      <div className="flex space-x-2">
+                                        {status === 'now' && (
+                                          <span className="live-indicator bg-red-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                            NOW
+                                          </span>
+                                        )}
+                                        {status === 'upcoming' && (
+                                          <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">
+                                            SOON
+                                          </span>
+                                        )}
+                                      </div>
                                     </div>
+                                    <h4 className="font-semibold text-zbt-grey-900 font-sans mb-2 text-lg">{event.name}</h4>
                                     
                                     <p className="text-sm mb-2 text-zbt-grey-600">{event.description}</p>
                                     
@@ -388,7 +390,7 @@ const Rush = () => {
                                       {event.tags.map((tag, tagIndex) => (
                                         <span
                                           key={tagIndex}
-                                          className={`px-2 py-1 text-xs font-medium ${getTagColor(tag)}`}
+                                          className={`px-2 py-1 rounded-full text-xs font-medium ${getTagColor(tag)}`}
                                         >
                                           {tag.replace('_', ' ')}
                                         </span>
