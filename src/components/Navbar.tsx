@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import zbtCrest from '../assets/images/zbt_crest.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={zbtCrest} alt="ZBT Crest" className="w-12 h-12" />
+            <img src="/zbt_crest.png" alt="ZBT Crest" className="w-12 h-12" />
           </Link>
 
           {/* Desktop Navigation */}
