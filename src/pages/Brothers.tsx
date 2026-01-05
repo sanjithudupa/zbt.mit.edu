@@ -15,6 +15,20 @@ interface Brother {
   littles: string[]
 }
 
+// wen
+// {
+//   "id": "andrew_wen",
+//   "name": "Andrew Wen",
+//   "zbt_class": "beta tau",
+//   "graduating_class": 2027,
+//   "bio": "Math + CS student seeking to understand fundamental truths about the world",
+//   "role": "",
+//   "rush_order": 12,
+//   "big": "naail_lakhani",
+//   "littles": ["joshua_liu"]
+// },
+
+const BROTHERS_HIDDEN = false;
 interface BrotherWithImage extends Brother {
   imageUrl?: string
   imageExists: boolean
@@ -310,74 +324,84 @@ const Brothers = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-sans">Active Brothers</h2>
+            {BROTHERS_HIDDEN && (
+              <p className="text-zbt-grey-600 text-sm">
+                Brothers list is not currently available.
+              </p>
+            )}
 
-            
-            {/* Filter */}
-            <div className="flex justify-center space-x-4 mb-8">
-              {zbtClasses.map((zbtClass) => (
-                <button
-                  key={zbtClass}
-                  onClick={() => setSelectedZbtClass(zbtClass)}
-                  className={`px-4 py-2  font-medium transition-colors ${
-                    selectedZbtClass === zbtClass
-                      ? 'bg-zbt-blue-600 text-white'
-                      : 'bg-zbt-grey-200 text-black hover:bg-zbt-grey-300'
-                  }`}
-                >
-                  {formatZbtClassName(zbtClass)}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
-            {filteredBrothers.map((brother) => (
-              <div 
-                key={brother.id} 
-                className="bg-cream-50 border border-cream-200 overflow-hidden cursor-pointer w-full max-w-sm"
-                onClick={() => {
-                  setSelectedBrother(brother)
-                  window.location.hash = brother.id
-                }}
-              >
-                <div className="h-48 bg-cream-200 flex items-center justify-center overflow-hidden relative">
-                  {brother.imageExists && !brother.imageError ? (
-                    <>
-                      {brother.imageLoading && (
-                        <div className="absolute inset-0 flex items-center justify-center bg-cream-100">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-warm-600"></div>
-                        </div>
-                      )}
-                      <img 
-                        src={brother.imageUrl} 
-                        alt={brother.name}
-                        className={`w-full h-full object-cover object-top ${brother.imageLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
-                        style={{ objectPosition: 'center 20%' }}
-                        onLoad={() => handleImageLoad(brother.id)}
-                        onError={() => handleImageError(brother.id)}
-                      />
-                    </>
-                  ) : (
-                    <div className="text-zbt-grey-500 text-center">
-                      <div className="text-3xl mb-2">👤</div>
-                      <div className="text-sm font-medium">{brother.name}</div>
-                    </div>
-                  )}
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-zbt-grey-500">{formatZbtClassName(brother.zbt_class)}</span>
-                    {brother.role && (
-                      <span className="px-2 py-1 bg-zbt-gold-100 text-zbt-gold-800 rounded-full text-xs font-medium">
-                        {capitalizeRole(brother.role)}
-                      </span>
-                    )}
+            {!BROTHERS_HIDDEN && (
+              <>
+                <div>
+                  {/* Filter */}
+                  <div className="flex justify-center space-x-4 mb-8">
+                    {zbtClasses.map((zbtClass) => (
+                      <button
+                        key={zbtClass}
+                        onClick={() => setSelectedZbtClass(zbtClass)}
+                        className={`px-4 py-2  font-medium transition-colors ${
+                          selectedZbtClass === zbtClass
+                            ? 'bg-zbt-blue-600 text-white'
+                            : 'bg-zbt-grey-200 text-black hover:bg-zbt-grey-300'
+                        }`}
+                      >
+                        {formatZbtClassName(zbtClass)}
+                      </button>
+                    ))}
                   </div>
-                  <h3 className="text-lg font-semibold text-black mb-1 font-sans">{brother.name}</h3>
-                  <p className="text-zbt-grey-600 text-sm">Class of {brother.graduating_class}</p>
                 </div>
-              </div>
-            ))}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
+                  {filteredBrothers.map((brother) => (
+                    <div 
+                      key={brother.id} 
+                      className="bg-cream-50 border border-cream-200 overflow-hidden cursor-pointer w-full max-w-sm"
+                      onClick={() => {
+                        setSelectedBrother(brother)
+                        window.location.hash = brother.id
+                      }}
+                    >
+                      <div className="h-48 bg-cream-200 flex items-center justify-center overflow-hidden relative">
+                        {brother.imageExists && !brother.imageError ? (
+                          <>
+                            {brother.imageLoading && (
+                              <div className="absolute inset-0 flex items-center justify-center bg-cream-100">
+                                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-warm-600"></div>
+                              </div>
+                            )}
+                            <img 
+                              src={brother.imageUrl} 
+                              alt={brother.name}
+                              className={`w-full h-full object-cover object-top ${brother.imageLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
+                              style={{ objectPosition: 'center 20%' }}
+                              onLoad={() => handleImageLoad(brother.id)}
+                              onError={() => handleImageError(brother.id)}
+                            />
+                          </>
+                        ) : (
+                          <div className="text-zbt-grey-500 text-center">
+                            <div className="text-3xl mb-2">👤</div>
+                            <div className="text-sm font-medium">{brother.name}</div>
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-4">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-sm text-zbt-grey-500">{formatZbtClassName(brother.zbt_class)}</span>
+                          {brother.role && (
+                            <span className="px-2 py-1 bg-zbt-gold-100 text-zbt-gold-800 rounded-full text-xs font-medium">
+                              {capitalizeRole(brother.role)}
+                            </span>
+                          )}
+                        </div>
+                        <h3 className="text-lg font-semibold text-black mb-1 font-sans">{brother.name}</h3>
+                        <p className="text-zbt-grey-600 text-sm">Class of {brother.graduating_class}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>

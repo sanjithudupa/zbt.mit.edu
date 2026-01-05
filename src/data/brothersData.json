@@ -24,17 +24,6 @@
       "littles": ["shaurya_agrawal"]
     },
     {
-      "id": "andrew_wen",
-      "name": "Andrew Wen",
-      "zbt_class": "beta tau",
-      "graduating_class": 2027,
-      "bio": "Math + CS student seeking to understand fundamental truths about the world",
-      "role": "",
-      "rush_order": 12,
-      "big": "naail_lakhani",
-      "littles": ["joshua_liu"]
-    },
-    {
       "id": "benjamin_fan",
       "name": "Benjamin Fan",
       "zbt_class": "beta tau",
@@ -538,17 +527,6 @@
       "role": "",
       "rush_order": 6,
       "big": "benjamin_fan",
-      "littles": []
-    },
-    {
-      "id": "humaid_alhuthali",
-      "name": "Humaid Alhuthali",
-      "zbt_class": "beta upsilon",
-      "graduating_class": 2028,
-      "bio": "Member of Beta Upsilon class, Class of 2028.",
-      "role": "",
-      "rush_order": 2,
-      "big": "dylan_yu",
       "littles": []
     },
     {
