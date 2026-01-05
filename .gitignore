@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 scripts/venv
+
+last_deployed_commit
