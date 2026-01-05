@@ -7,6 +7,7 @@ interface ClickableImageProps {
   className?: string
   placeholder?: string
   placeholderIcon?: string
+  objectFit?: 'cover' | 'contain'
 }
 
 const ClickableImage = ({ 
@@ -14,7 +15,8 @@ const ClickableImage = ({
   alt, 
   className = "", 
   placeholder,
-  placeholderIcon = "📸"
+  placeholderIcon = "📸",
+  objectFit = 'cover'
 }: ClickableImageProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -49,7 +51,7 @@ const ClickableImage = ({
           <img
             src={src}
             alt={alt}
-            className="w-full h-full object-cover"
+            className={objectFit === 'contain' ? `w-full object-${objectFit}` : `w-full h-full object-${objectFit}`}
           />
         )}
       </div>

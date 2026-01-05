@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 
 import GallerySet from '../components/GallerySet'
+import ClickableImage from '../components/ClickableImage'
 import galleryData from '../data/galleryData.json'
 
 const Home = () => {
+  const most_recent_composite = "fall25"
+  
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -43,9 +46,26 @@ const Home = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8" style={{textAlign: 'center'}}>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
                 A brotherhood of over 50 members from across the United States and various foreign countries, representing a diverse array of majors and interests at MIT and a broad range of on campus activities.
-              </p>     
+              </p>
+          </div>
+
+          <div className="flex flex-col items-center mb-8">
+            <div className="max-w-3xl w-full mb-4">
+              <ClickableImage
+                src={`/images/brothers/composites/${most_recent_composite}.jpeg`}
+                alt="ZBT Brothers Composite"
+                className="w-full"
+                objectFit="contain"
+              />
+            </div>
+            <Link
+              to="/brothers"
+              className="text-zbt-blue-600 hover:text-zbt-blue-700 font-semibold text-lg transition-colors"
+            >
+              Meet the Brotherhood
+            </Link>
           </div>
 
           <GallerySet

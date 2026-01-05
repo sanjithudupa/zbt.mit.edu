@@ -1,5 +1,5 @@
 {
-  "most_recent_class": "beta upsilon",
+  "most_recent_class": "beta phi",
   "brothers": [
     {
       "id": "adrian_yordanov",
@@ -10,7 +10,7 @@
       "role": "Head of Food",
       "rush_order": 1,
       "big": "frank_liu",
-      "littles": []
+      "littles": ["eddy_chen"]
     },
     {
       "id": "advay_goel",
@@ -472,7 +472,7 @@
       "role": "webmaster",
       "rush_order": 3,
       "big": "shreyas_shrivastava",
-      "littles": []
+      "littles": ["ray_zhang"]
     },
     {
       "id": "colton_kim",
@@ -483,7 +483,7 @@
       "role": "risk chair",
       "rush_order": 0,
       "big": "eli_park",
-      "littles": []
+      "littles": ["danny_thach"]
     },
     {
       "id": "timothy_mathew",
@@ -505,7 +505,7 @@
       "role": "",
       "rush_order": 8,
       "big": "andrew_wen",
-      "littles": []
+      "littles": ["aj_ganbold"]
     },
     {
       "id": "aaron_hu",
@@ -549,7 +549,7 @@
       "role": "",
       "rush_order": 4,
       "big": "greycen_ren",
-      "littles": []
+      "littles": ["jason_youm"]
     },
     {
       "id": "pavan_jayaraman",
@@ -560,7 +560,7 @@
       "role": "",
       "rush_order": 12,
       "big": "",
-      "littles": []
+      "littles": ["victor_li"]
     },
     {
       "id": "jiarui_peng",
@@ -593,6 +593,94 @@
       "role": "",
       "rush_order": 8,
       "big": "jeremy_yu",
+      "littles": ["kevin_zheng"]
+    },
+    {
+      "id": "aj_ganbold",
+      "name": "Azjargal (AJ) Ganbold",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 1,
+      "big": "joshua_liu",
+      "littles": []
+    },
+    {
+      "id": "danny_thach",
+      "name": "Danny Thach",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 2,
+      "big": "danny_thach",
+      "littles": []
+    },
+    {
+      "id": "eddy_chen",
+      "name": "Eddy Chen",
+      "zbt_class": "beta phi",
+      "graduating_class": 2028,
+      "bio": "Member of Beta Phi class, Class of 2028.",
+      "role": "",
+      "rush_order": 3,
+      "big": "adrian_yordanov",
+      "littles": []
+    },
+    {
+      "id": "ivan_jiang",
+      "name": "Ivan Jiang",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 4,
+      "big": "humaid_alhuthali",
+      "littles": []
+    },
+    {
+      "id": "kevin_zheng",
+      "name": "Kevin Zheng",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 5,
+      "big": "yinuo_song",
+      "littles": []
+    },
+    {
+      "id": "ray_zhang",
+      "name": "Ray Zhang",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 6,
+      "big": "sanjith_udupa",
+      "littles": []
+    },
+    {
+      "id": "victor_li",
+      "name": "Victor Li",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 7,
+      "big": "pavan_jayaraman",
+      "littles": []
+    },
+    {
+      "id": "jason_youm",
+      "name": "Jason Youm",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 8,
+      "big": "michael_wang",
       "littles": []
     }
   ],
