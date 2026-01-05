@@ -1,24 +1,42 @@
 #!/bin/bash
 
-KERB="${1:-}"
+# Parse arguments
+KERB=""
+SKIP_BUILD=false
+
+for arg in "$@"; do
+  if [[ "$arg" == "--last" ]]; then
+    SKIP_BUILD=true
+  elif [[ -z "$KERB" && "$arg" != "--last" ]]; then
+    KERB="$arg"
+  fi
+done
 
 if [[ -z "$KERB" ]]; then
-  echo "Usage: $0 <kerberos>"
+  echo "Usage: $0 <kerberos> [--last]"
+  echo "  --last  Skip building and copying files, only run the backup/permissions step"
   exit 1
 fi
 
-echo "#### STARTING DEPLOYMENT, YOU WILL BE PROMPTED FOR MIT AUTH TWICE ####"
-echo "if the connection fails for either remote step, ensure you have no other ssh connections to athena, wait a bit, and try again"
+if [[ "$SKIP_BUILD" == "true" ]]; then
+  echo "#### RUNNING BACKUP/PERMISSIONS STEP ONLY ####"
+  echo "### Backing up old files and setting permissions for new files... ###"
+  ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
+  echo "### Complete. Hard-refresh your browser to see changes. ###"
+else
+  echo "#### STARTING DEPLOYMENT, YOU WILL BE PROMPTED FOR MIT AUTH TWICE ####"
+  echo "if the connection fails for either remote step, ensure you have no other ssh connections to athena, wait a bit, and try again"
 
-echo "### Building Vite app... ###"
-yarn run build
+  echo "### Building Vite app... ###"
+  yarn run build
 
-echo "### Copying ./dist to ${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/ ###"
-scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"
+  echo "### Copying ./dist to ${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/ ###"
+  scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"
 
-sleep 3
+  sleep 3
 
-echo "### Backing up old files and setting permissions for new files... ###"
-ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
+  echo "### Backing up old files and setting permissions for new files... ###"
+  ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
 
-echo "### Deploy complete. Hard-refresh your browser to see changes. ###"
+  echo "### Deploy complete. Hard-refresh your browser to see changes. ###"
+fi
