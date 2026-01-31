@@ -47,7 +47,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8" style={{textAlign: 'center'}}>
             <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
-                A brotherhood of over 50 members from across the United States and various foreign countries, representing a diverse array of majors and interests at MIT and a broad range of on campus activities.
+                We are a brotherhood of over 50 members from across the United States and various foreign countries, representing a diverse array of majors and interests at MIT and a broad range of on campus activities.
               </p>
           </div>
 
