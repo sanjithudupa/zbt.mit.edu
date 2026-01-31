@@ -48,7 +48,11 @@ jobs:
 
           git rm -r --ignore-unmatch .
 
-          rsync -av --delete dist/ ./
+          rsync -av --delete \
+            --filter='P .git/' \
+            --filter='P .github/' \
+            dist/ ./ || { code=$?; echo "rsync failed with exit $code"; exit $code; }
+
 
           touch .nojekyll
 
