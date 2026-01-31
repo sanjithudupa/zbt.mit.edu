@@ -84,10 +84,6 @@ const Home = () => {
             <hr className="border-zbt-grey-300" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-zbt-grey-900">Come Get to Know Us!</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto text-zbt-grey-700">
-            No matter if you go to MIT, Harvard, Wellesley or BU - we welcome new friends to our house. 
-            Come to events hosted at our house during the school year and experience the ZBT brotherhood!
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/rush"

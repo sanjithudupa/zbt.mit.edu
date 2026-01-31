@@ -1,42 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Parse arguments
-KERB=""
-SKIP_BUILD=false
-
-for arg in "$@"; do
-  if [[ "$arg" == "--last" ]]; then
-    SKIP_BUILD=true
-  elif [[ -z "$KERB" && "$arg" != "--last" ]]; then
-    KERB="$arg"
-  fi
-done
-
-if [[ -z "$KERB" ]]; then
-  echo "Usage: $0 <kerberos> [--last]"
-  echo "  --last  Skip building and copying files, only run the backup/permissions step"
+# require kerberos username
+if [[ -z "${1:-}" ]]; then
+  echo "Usage: $0 <kerberos> [--restore-backup]"
   exit 1
 fi
 
-if [[ "$SKIP_BUILD" == "true" ]]; then
-  echo "#### RUNNING BACKUP/PERMISSIONS STEP ONLY ####"
-  echo "### Backing up old files and setting permissions for new files... ###"
-  ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
-  echo "### Complete. Hard-refresh your browser to see changes. ###"
-else
-  echo "#### STARTING DEPLOYMENT, YOU WILL BE PROMPTED FOR MIT AUTH TWICE ####"
-  echo "if the connection fails for either remote step, ensure you have no other ssh connections to athena, wait a bit, and try again"
+echo "hint: you can use --restore-backup optionally"
 
-  echo "### Building Vite app... ###"
-  yarn run build
+USER="$1"; shift
 
-  echo "### Copying ./dist to ${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/ ###"
-  scp -r dist/* "${KERB}@athena.dialup.mit.edu:/mit/zbt/web_scripts_new/"
-
-  sleep 3
-
-  echo "### Backing up old files and setting permissions for new files... ###"
-  ssh "${KERB}@athena.dialup.mit.edu" bash /mit/zbt/clean_backup_deploy.sh
-
-  echo "### Deploy complete. Hard-refresh your browser to see changes. ###"
-fi
+ssh -t "$USER@athena.dialup.mit.edu" "cd /mit/zbt && ./deploy_from_git.sh $*"
