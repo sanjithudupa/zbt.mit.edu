@@ -42,6 +42,9 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          rm -rf /tmp/dist
+          cp -a dist /tmp/dist
+
           git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}" || true
 
           git switch "${DEPLOY_BRANCH}" 2>/dev/null || git checkout -b "${DEPLOY_BRANCH}"
@@ -49,10 +52,8 @@ jobs:
           git rm -r --ignore-unmatch .
 
           rsync -av --delete \
-            --filter='P .git/' \
-            --filter='P .github/' \
-            dist/ ./ || { code=$?; echo "rsync failed with exit $code"; exit $code; }
-
+            --exclude '.git/' \
+            /tmp/dist/ ./
 
           touch .nojekyll
 
