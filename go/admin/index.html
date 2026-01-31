@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Go Link Admin</title>
+<form id="f">
+  <input name="shortcut" placeholder="shortcut" required />
+  <input name="url" placeholder="https://…" required />
+  <button type="submit">Update</button>
+</form>
+<button id="rm" type="button">Remove</button>
+<pre id="out"></pre>
+<script>
+const out = document.getElementById("out");
+const f = document.getElementById("f");
+const rm = document.getElementById("rm");
+
+async function call(action, body) {
+  const r = await fetch("/go/set_link.cgi", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ action, ...body }),
+  });
+  out.textContent = await r.text();
+}
+
+f.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const fd = new FormData(f);
+  call("update", { shortcut: fd.get("shortcut"), url: fd.get("url") });
+});
+
+rm.addEventListener("click", () => {
+  const fd = new FormData(f);
+  call("remove", { shortcut: fd.get("shortcut") });
+});
+</script>
+

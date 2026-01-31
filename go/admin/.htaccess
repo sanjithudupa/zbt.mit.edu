@@ -1,0 +1,2 @@
+AuthType SSLCert
+Require valid-user
