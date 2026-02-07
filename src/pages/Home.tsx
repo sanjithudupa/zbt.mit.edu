@@ -2,12 +2,9 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 
 import GallerySet from '../components/GallerySet'
-import ClickableImage from '../components/ClickableImage'
 import galleryData from '../data/galleryData.json'
 
 const Home = () => {
-  const most_recent_composite = "fall25"
-  
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -51,15 +48,7 @@ const Home = () => {
               </p>
           </div>
 
-          <div className="flex flex-col items-center mb-8">
-            <div className="max-w-3xl w-full mb-4">
-              <ClickableImage
-                src={`/images/brothers/composites/${most_recent_composite}.jpeg`}
-                alt="ZBT Brothers Composite"
-                className="w-full"
-                objectFit="contain"
-              />
-            </div>
+          <div className="flex justify-center mb-8">
             <Link
               to="/brothers"
               className="text-zbt-blue-600 hover:text-zbt-blue-700 font-semibold text-lg transition-colors"
