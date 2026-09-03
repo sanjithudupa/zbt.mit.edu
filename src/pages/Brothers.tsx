@@ -15,6 +15,19 @@ interface Brother {
   littles: string[]
 }
 
+// jason_youm
+// {
+//   "id": "jason_youm",
+//   "name": "Jason Youm",
+//   "zbt_class": "beta phi",
+//   "graduating_class": 2029,
+//   "bio": "Member of Beta Phi class, Class of 2029.",
+//   "role": "",
+//   "rush_order": 8,
+//   "big": "michael_wang",
+//   "littles": []
+// }
+
 const BROTHERS_HIDDEN = false;
 interface BrotherWithImage extends Brother {
   imageUrl?: string
