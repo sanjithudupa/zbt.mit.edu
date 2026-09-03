@@ -156,6 +156,17 @@
       "littles": []
     },
     {
+      "id": "andrew_wen",
+      "name": "Andrew Wen",
+      "zbt_class": "beta tau",
+      "graduating_class": 2027,
+      "bio": "Math + CS student seeking to understand fundamental truths about the world",
+      "role": "",
+      "rush_order": 12,
+      "big": "naail_lakhani",
+      "littles": ["joshua_liu"]
+    },
+    {
       "id": "yusuf_young",
       "name": "Yusuf Young",
       "zbt_class": "beta tau",

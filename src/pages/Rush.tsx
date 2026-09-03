@@ -319,14 +319,14 @@ const Rush = () => {
           {/* Phone Call Section - Above the rush events list */}
           <div className={`mb-8 bg-zbt-blue-50 border border-zbt-blue-200 p-6 max-w-2xl mx-auto ${shouldBlurContent ? 'blur-sm pointer-events-none select-none' : ''}`}>
             <p className="text-lg text-zbt-grey-700 mb-4 text-center">
-              Need a ride to an event? Call us at <span className="font-semibold text-zbt-blue-600">888-5444-ZBT</span> and we'll pick you up!
+              Need a ride to an event? Call us at <span className="font-semibold text-zbt-blue-600">844-7RS-HZBT</span> and we'll pick you up!
             </p>
             <div className="text-center">
               <a
                 href="tel:888-544-4428"
                 className="inline-flex items-center justify-center bg-zbt-blue-600 text-white px-6 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors"
               >
-                Call 888-544-4428
+                Call 844-777-7928
               </a>
             </div>
           </div>

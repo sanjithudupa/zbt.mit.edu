@@ -15,19 +15,6 @@ interface Brother {
   littles: string[]
 }
 
-// wen
-// {
-//   "id": "andrew_wen",
-//   "name": "Andrew Wen",
-//   "zbt_class": "beta tau",
-//   "graduating_class": 2027,
-//   "bio": "Math + CS student seeking to understand fundamental truths about the world",
-//   "role": "",
-//   "rush_order": 12,
-//   "big": "naail_lakhani",
-//   "littles": ["joshua_liu"]
-// },
-
 const BROTHERS_HIDDEN = false;
 interface BrotherWithImage extends Brother {
   imageUrl?: string
