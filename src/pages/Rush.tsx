@@ -323,10 +323,10 @@ const Rush = () => {
             </p>
             <div className="text-center">
               <a
-                href="tel:888-544-4428"
+                href="tel:888-777-4928"
                 className="inline-flex items-center justify-center bg-zbt-blue-600 text-white px-6 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors"
               >
-                Call 844-777-7928
+                Call 844-777-4928
               </a>
             </div>
           </div>
