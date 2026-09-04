@@ -695,13 +695,24 @@
       "littles": []
     },
     {
+      "id": "andrew_xie",
+      "name": "Andrew Xie",
+      "zbt_class": "beta phi",
+      "graduating_class": 2029,
+      "bio": "Member of Beta Phi class, Class of 2029.",
+      "role": "",
+      "rush_order": 10,
+      "big": "",
+      "littles": []
+    },
+    {
       "id": "owen_zhang",
       "name": "Owen Zhang",
       "zbt_class": "beta phi",
       "graduating_class": 2029,
       "bio": "Member of Beta Phi class, Class of 2029.",
       "role": "",
-      "rush_order": 10,
+      "rush_order": 11,
       "big": "",
       "littles": []
     }
