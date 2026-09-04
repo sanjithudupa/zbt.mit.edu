@@ -15,7 +15,7 @@ const Rush = () => {
   const shouldBlurContent = useMemo(() => {
     // Parse rush start date from "08/30" format
     const [month, day] = rushData.start_date.split('/').map(num => parseInt(num))
-    const rushStartDate = new Date(2025, month - 1, day - 1) // -1 to let it open the previous day
+    const rushStartDate = new Date(2026, month - 1, day - 1) // -1 to let it open the previous day
     
     // Use current date directly (no timezone conversion)
     const currentDateLocal = new Date(currentDate)
@@ -77,7 +77,7 @@ const Rush = () => {
   const formatDate = (dateStr: string) => {
     const month = parseInt(dateStr.substring(0, 2))
     const day = parseInt(dateStr.substring(3, 5))
-    const date = new Date(2025, month - 1, day)
+    const date = new Date(2026, month - 1, day)
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
   }
 
@@ -135,8 +135,8 @@ const Rush = () => {
     if (endMatch[3] === 'PM' && endHour !== 12) endHour += 12
     if (endMatch[3] === 'AM' && endHour === 12) endHour = 0
     
-    const startDateTime = new Date(2025, month - 1, day, startHour, parseInt(startMatch[2]))
-    const endDateTime = new Date(2025, month - 1, day, endHour, parseInt(endMatch[2]))
+    const startDateTime = new Date(2026, month - 1, day, startHour, parseInt(startMatch[2]))
+    const endDateTime = new Date(2026, month - 1, day, endHour, parseInt(endMatch[2]))
     
     return { startDateTime, endDateTime }
   }
@@ -323,7 +323,7 @@ const Rush = () => {
             </p>
             <div className="text-center">
               <a
-                href="tel:888-777-4928"
+                href="tel:844-777-4928"
                 className="inline-flex items-center justify-center bg-zbt-blue-600 text-white px-6 py-3 font-semibold hover:bg-zbt-blue-700 transition-colors"
               >
                 Call 844-777-4928
